@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cast Iraq — الحساب</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body data-page="auth" class="auth-body">
+<div class="auth-shell">
+<section class="auth-side"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a><div><span class="eyebrow">ابدأ هسه</span><h1>مكان واحد لكل<br>تفاصيل الكاستنغ.</h1><p>سوّي حساب كموهبة أو شركة وادخل مباشرة إلى الداشبورد.</p></div><small>نسخة تجريبية — البيانات تنحفظ داخل هذا المتصفح.</small></section>
+<section class="auth-panel">
+<div class="auth-tabs"><button id="loginTab" class="active">تسجيل الدخول</button><button id="signupTab">إنشاء حساب</button></div>
+<div id="loginView">
+<h2>أهلاً برجعتك</h2><p class="muted">استخدم أي إيميل مسجل بالنسخة التجريبية.</p>
+<form id="loginForm" class="form-stack"><label>الإيميل<input type="email" id="loginEmail" required placeholder="name@email.com"></label><label>كلمة المرور<input type="password" id="loginPassword" required placeholder="••••••••"></label><button class="btn primary full">دخول</button></form>
+<div class="demo-accounts"><span>حسابات تجريبية:</span><button data-demo="admin@castiraq.com">Admin</button><button data-demo="company@castiraq.com">Company</button><button data-demo="talent@castiraq.com">Talent</button></div>
+</div>
+<div id="signupView" class="hidden">
+<h2>إنشاء حساب</h2><p class="muted">اختار نوع الحساب أولاً.</p>
+<div class="account-types"><button class="account-type active" data-type="talent"><b>🎭 موهبة</b><span>ممثل، مودل، UGC، كومبارس</span></button><button class="account-type" data-type="company"><b>🎬 شركة / مخرج</b><span>Production، Agency، Director</span></button></div>
+<form id="signupForm" class="form-stack"><input type="hidden" id="signupType" value="talent"><label>الاسم الكامل / اسم الشركة<input id="signupName" required></label><label>الإيميل<input id="signupEmail" type="email" required></label><label>المدينة<select id="signupCity"><option>بغداد</option><option>أربيل</option><option>البصرة</option><option>النجف</option><option>كربلاء</option></select></label><label>كلمة المرور<input id="signupPassword" type="password" required minlength="4"></label><label class="check"><input type="checkbox" required> أوافق على شروط الاستخدام وسياسة الخصوصية</label><button class="btn primary full">إنشاء الحساب</button></form>
+</div>
+</section></div>
+<script src="app.js"></script></body></html>

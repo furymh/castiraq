@@ -1,53 +1,6 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cast Iraq Dashboard</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="dashboard.css">
-</head>
-<body>
-  <aside class="sidebar">
-    <a class="brand" href="index.html">
-      <span class="brand-mark">C</span>
-      <span>Cast Iraq</span>
-    </a>
-
-    <div class="role-switcher">
-      <button class="role-btn active" data-role="admin">Admin</button>
-      <button class="role-btn" data-role="company">Company</button>
-      <button class="role-btn" data-role="talent">Talent</button>
-    </div>
-
-    <nav id="sideNav"></nav>
-
-    <div class="sidebar-bottom">
-      <a href="index.html">← العودة للموقع</a>
-    </div>
-  </aside>
-
-  <main class="main">
-    <header class="topbar">
-      <div>
-        <span class="muted">لوحة التحكم</span>
-        <h1 id="pageTitle">نظرة عامة</h1>
-      </div>
-      <div class="top-actions">
-        <button class="icon-btn">🔔</button>
-        <div class="user-chip">
-          <span class="avatar-sm">A</span>
-          <div><strong id="userName">Admin</strong><small id="userRole">مالك المنصة</small></div>
-        </div>
-      </div>
-    </header>
-
-    <section id="content"></section>
-  </main>
-
-  <div class="toast" id="toast"></div>
-  <script src="dashboard.js"></script>
-</body>
-</html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cast Iraq Dashboard</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body data-page="dashboard" class="dash-body">
+<aside class="sidebar"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a><div class="sidebar-user"><div class="avatar" id="sideAvatar">A</div><div><b id="sideName">User</b><span id="sideRole">Account</span></div></div><nav id="sideNav"></nav><div class="sidebar-foot"><a href="index.html">← الموقع</a><button id="logoutBtn">تسجيل الخروج</button></div></aside>
+<main class="dash-main"><header class="dash-top"><div><span class="muted">لوحة التحكم</span><h1 id="dashTitle">نظرة عامة</h1></div><div class="dash-actions"><button class="icon-btn">🔔</button><a class="btn secondary" href="settings.html">الإعدادات</a></div></header><section id="dashContent"></section></main>
+<div class="toast" id="toast"></div><script src="app.js"></script></body></html>
