@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cast Iraq - منصة الكاستنغ العراقية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">C</span>
+        <span>Cast Iraq</span>
+      </a>
+      <nav>
+        <a href="#talents">المواهب</a>
+        <a href="#casting">فرص الكاستنغ</a>
+        <a href="#companies">للشركات</a>
+      </nav>
+      <button class="btn ghost" id="loginBtn">تسجيل الدخول</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">منصة كاستنغ عراقية</span>
+          <h1>اختار الوجه المناسب<br/>لمشروعك خلال دقائق</h1>
+          <p>ابحث بين ممثلين، مودلز، كومبارس وصناع محتوى. فلترة حسب العمر، المدينة، النوع والخبرة.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#talents">ابحث عن موهبة</a>
+            <a class="btn secondary" href="#casting">اعرض فرصة كاستنغ</a>
+          </div>
+          <div class="stats">
+            <div><strong>1,250+</strong><span>موهبة</span></div>
+            <div><strong>95+</strong><span>شركة ومخرج</span></div>
+            <div><strong>180+</strong><span>فرصة كاستنغ</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="mini-search">
+            <h3>بحث سريع</h3>
+            <select id="heroCity">
+              <option value="">كل المدن</option>
+              <option>بغداد</option>
+              <option>أربيل</option>
+              <option>البصرة</option>
+              <option>النجف</option>
+            </select>
+            <select id="heroType">
+              <option value="">كل الفئات</option>
+              <option>ممثل</option>
+              <option>مودل</option>
+              <option>UGC</option>
+              <option>كومبارس</option>
+            </select>
+            <button class="btn primary full" onclick="applyHeroSearch()">عرض النتائج</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="talents">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">قاعدة المواهب</span>
+            <h2>اكتشف المواهب</h2>
+          </div>
+          <div class="filters">
+            <input id="searchInput" type="search" placeholder="ابحث بالاسم أو المهارة..." />
+            <select id="cityFilter">
+              <option value="">كل المدن</option>
+              <option>بغداد</option>
+              <option>أربيل</option>
+              <option>البصرة</option>
+              <option>النجف</option>
+            </select>
+            <select id="typeFilter">
+              <option value="">كل الفئات</option>
+              <option>ممثل</option>
+              <option>مودل</option>
+              <option>UGC</option>
+              <option>كومبارس</option>
+            </select>
+          </div>
+        </div>
+        <div class="cards" id="talentGrid"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="casting">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">فرص حالية</span>
+            <h2>Casting Calls</h2>
+          </div>
+          <button class="btn primary" id="openCastingModal">+ أضف فرصة</button>
+        </div>
+        <div class="casting-list" id="castingList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="companies">
+      <div class="container company-box">
+        <div>
+          <span class="eyebrow">للشركات والمخرجين</span>
+          <h2>سوّي Shortlist وشاركه ويا العميل</h2>
+          <p>احفظ أفضل المرشحين، رتّبهم حسب المشروع، وشارك رابط واحد مع العميل حتى يختار بسهولة.</p>
+          <button class="btn primary" onclick="showToast('تم إنشاء حساب شركة تجريبي')">ابدأ كـ شركة</button>
+        </div>
+        <div class="feature-grid">
+          <div class="feature"><b>فلترة متقدمة</b><span>العمر، المدينة، النوع، الخبرة</span></div>
+          <div class="feature"><b>Shortlist</b><span>قوائم منفصلة لكل مشروع</span></div>
+          <div class="feature"><b>Showreel</b><span>صور وفيديو لكل موهبة</span></div>
+          <div class="feature"><b>Casting Calls</b><span>انشر الفرصة واستقبل الطلبات</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <div class="brand"><span class="brand-mark">C</span><span>Cast Iraq</span></div>
+        <p>نسخة MVP تجريبية لمنصة كاستنغ عراقية.</p>
+      </div>
+      <span>© 2026 Cast Iraq</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="profileModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('profileModal')">×</button>
+      <div id="profileContent"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="castingModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('castingModal')">×</button>
+      <h3>إضافة فرصة كاستنغ</h3>
+      <form id="castingForm">
+        <input required id="castTitle" placeholder="اسم المشروع" />
+        <input required id="castCompany" placeholder="اسم الشركة" />
+        <select required id="castCity">
+          <option value="">اختر المدينة</option>
+          <option>بغداد</option><option>أربيل</option><option>البصرة</option><option>النجف</option>
+        </select>
+        <input required id="castAge" placeholder="العمر المطلوب، مثال: 20-30" />
+        <input required id="castPay" placeholder="الأجر، مثال: 350,000 د.ع" />
+        <textarea required id="castDesc" placeholder="تفاصيل مختصرة"></textarea>
+        <button class="btn primary full" type="submit">نشر الفرصة</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
