@@ -1,20 +1,13 @@
-# Cast Iraq Full MVP
+Cast Iraq Premium Home V3
 
-هذه نسخة Frontend كاملة قابلة للتجربة على GitHub Pages.
+ارفع الملفات كلها إلى نفس repository واستبدل الملفات القديمة.
+أهم الملفات:
+index.html
+styles.css
+app.js
+auth.html
+dashboard.html
+settings.html
 
-## الصفحات
-- index.html — الصفحة الرئيسية
-- auth.html — تسجيل الدخول / إنشاء حساب
-- dashboard.html — داشبورد حسب نوع الحساب
-- settings.html — إعدادات الحساب
-- styles.css — التصميم
-- app.js — المنطق
-
-## حسابات تجريبية
-- Admin: admin@castiraq.com / 1234
-- Company: company@castiraq.com / 1234
-- Talent: talent@castiraq.com / 1234
-
-## ملاحظة مهمة
-التسجيل الحالي يستخدم localStorage داخل نفس المتصفح فقط.
-حتى يصير الموقع Production حقيقي يحتاج Backend مثل Supabase أو Firebase.
+الصور المعروضة في النسخة التجريبية مأخوذة من Pexels وتستخدم فقط كصور Placeholder للمواهب.
+استبدلها لاحقاً بصور المستخدمين الحقيقية عند ربط قاعدة البيانات.

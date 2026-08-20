@@ -1,13 +1,13 @@
 
 const seedTalents=[
-{id:1,name:'سارة أحمد',age:24,city:'بغداد',type:'مودل',exp:'3 سنوات',skills:['Beauty','Fashion','إعلانات'],icon:'👩🏻',verified:true},
-{id:2,name:'علي كريم',age:29,city:'بغداد',type:'ممثل',exp:'5 سنوات',skills:['تمثيل','Commercial','أكشن'],icon:'👨🏻',verified:true},
-{id:3,name:'نور حسن',age:22,city:'أربيل',type:'UGC',exp:'سنتان',skills:['UGC','Beauty','Social'],icon:'👩🏼',verified:false},
-{id:4,name:'مصطفى جاسم',age:34,city:'البصرة',type:'ممثل',exp:'7 سنوات',skills:['دراما','Voice','إعلانات'],icon:'🧔🏻',verified:true},
-{id:5,name:'زهراء علي',age:27,city:'النجف',type:'مودل',exp:'4 سنوات',skills:['Lifestyle','Fashion'],icon:'👩🏻‍🦰',verified:true},
-{id:6,name:'حسين سامر',age:21,city:'بغداد',type:'كومبارس',exp:'سنة',skills:['كومبارس','رياضة'],icon:'👦🏻',verified:false},
-{id:7,name:'ريماس محمد',age:19,city:'بغداد',type:'مودل',exp:'سنة',skills:['Beauty','Jewelry'],icon:'👩🏻',verified:true},
-{id:8,name:'كرار مهدي',age:31,city:'أربيل',type:'ممثل',exp:'6 سنوات',skills:['Comedy','Commercial'],icon:'👨🏽',verified:true}
+{id:1,name:'سارة أحمد',age:24,city:'بغداد',type:'مودل',exp:'3 سنوات',skills:['Beauty','Fashion','إعلانات'],image:'https://images.pexels.com/photos/31686699/pexels-photo-31686699.jpeg?auto=compress&cs=tinysrgb&w=700',verified:true},
+{id:2,name:'علي كريم',age:29,city:'بغداد',type:'ممثل',exp:'5 سنوات',skills:['تمثيل','Commercial','أكشن'],image:'https://images.pexels.com/photos/31538901/pexels-photo-31538901.jpeg?auto=compress&cs=tinysrgb&w=700',verified:true},
+{id:3,name:'نور حسن',age:22,city:'أربيل',type:'UGC',exp:'سنتان',skills:['UGC','Beauty','Social'],image:'https://images.pexels.com/photos/7658748/pexels-photo-7658748.jpeg?auto=compress&cs=tinysrgb&w=700',verified:false},
+{id:4,name:'مصطفى جاسم',age:34,city:'البصرة',type:'ممثل',exp:'7 سنوات',skills:['دراما','Voice','إعلانات'],image:'https://images.pexels.com/photos/31510091/pexels-photo-31510091.jpeg?auto=compress&cs=tinysrgb&w=700',verified:true},
+{id:5,name:'زهراء علي',age:27,city:'النجف',type:'مودل',exp:'4 سنوات',skills:['Lifestyle','Fashion'],image:'https://images.pexels.com/photos/31686699/pexels-photo-31686699.jpeg?auto=compress&cs=tinysrgb&w=700',verified:true},
+{id:6,name:'حسين سامر',age:21,city:'بغداد',type:'كومبارس',exp:'سنة',skills:['كومبارس','رياضة'],image:'https://images.pexels.com/photos/15792253/pexels-photo-15792253.jpeg?auto=compress&cs=tinysrgb&w=700',verified:false},
+{id:7,name:'ريماس محمد',age:19,city:'بغداد',type:'مودل',exp:'سنة',skills:['Beauty','Jewelry'],image:'https://images.pexels.com/photos/7658748/pexels-photo-7658748.jpeg?auto=compress&cs=tinysrgb&w=700',verified:true},
+{id:8,name:'كرار مهدي',age:31,city:'أربيل',type:'ممثل',exp:'6 سنوات',skills:['Comedy','Commercial'],image:'https://images.pexels.com/photos/31438330/pexels-photo-31438330.jpeg?auto=compress&cs=tinysrgb&w=700',verified:true}
 ];
 const seedCastings=[
 {id:1,title:'إعلان سيارات',company:'Sparks Production',city:'بغداد',age:'25-35',pay:'500,000 د.ع',status:'active'},
@@ -45,7 +45,7 @@ if(page==='home'){
  function renderTalents(){
   const q=(search.value||'').toLowerCase(),c=city.value,t=type.value;
   const list=seedTalents.filter(x=>(!q||(x.name+' '+x.skills.join(' ')).toLowerCase().includes(q))&&(!c||x.city===c)&&(!t||x.type===t));
-  grid.innerHTML=list.map(x=>`<article class="talent-card"><div class="talent-photo">${x.icon}</div><div class="talent-body"><div class="talent-top"><b>${x.name}</b><span class="verified">${x.verified?'● موثق':''}</span></div><div class="meta">${x.type} • ${x.age} سنة • ${x.city}</div><div class="meta">خبرة: ${x.exp}</div><div class="tags">${x.skills.map(s=>`<span class="tag">${s}</span>`).join('')}</div><div class="card-actions"><a class="btn secondary" href="auth.html#login">عرض</a><button class="btn primary" onclick="location.href='auth.html#login'">Shortlist +</button></div></div></article>`).join('')||'<p>ماكو نتائج مطابقة.</p>';
+  grid.innerHTML=list.map(x=>`<article class="talent-card"><div class="talent-photo"><img src="${x.image}" alt="${x.name}" loading="lazy"></div><div class="talent-body"><div class="talent-top"><b>${x.name}</b><span class="verified">${x.verified?'● موثق':''}</span></div><div class="meta">${x.type} • ${x.age} سنة • ${x.city}</div><div class="meta">خبرة: ${x.exp}</div><div class="tags">${x.skills.map(s=>`<span class="tag">${s}</span>`).join('')}</div><div class="card-actions"><a class="btn secondary" href="auth.html#login">عرض</a><button class="btn primary" onclick="location.href='auth.html#login'">Shortlist +</button></div></div></article>`).join('')||'<p>ماكو نتائج مطابقة.</p>';
  }
  [search,city,type].forEach(e=>e.addEventListener('input',renderTalents));renderTalents();
  document.getElementById('castingList').innerHTML=seedCastings.map(c=>`<div class="casting-item"><div><b>${c.title}</b><br><small>${c.company}</small></div><div><small>المدينة</small><br>${c.city}</div><div><small>العمر / الأجر</small><br>${c.age} • ${c.pay}</div><a class="btn primary" href="auth.html#login">قدّم الآن</a></div>`).join('');

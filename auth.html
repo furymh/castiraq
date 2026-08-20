@@ -1,19 +1,128 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cast Iraq — الحساب</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cast Iraq — تسجيل الدخول</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body data-page="auth" class="auth-body">
-<div class="auth-shell">
-<section class="auth-side"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a><div><span class="eyebrow">ابدأ هسه</span><h1>مكان واحد لكل<br>تفاصيل الكاستنغ.</h1><p>سوّي حساب كموهبة أو شركة وادخل مباشرة إلى الداشبورد.</p></div><small>نسخة تجريبية — البيانات تنحفظ داخل هذا المتصفح.</small></section>
-<section class="auth-panel">
-<div class="auth-tabs"><button id="loginTab" class="active">تسجيل الدخول</button><button id="signupTab">إنشاء حساب</button></div>
-<div id="loginView">
-<h2>أهلاً برجعتك</h2><p class="muted">استخدم أي إيميل مسجل بالنسخة التجريبية.</p>
-<form id="loginForm" class="form-stack"><label>الإيميل<input type="email" id="loginEmail" required placeholder="name@email.com"></label><label>كلمة المرور<input type="password" id="loginPassword" required placeholder="••••••••"></label><button class="btn primary full">دخول</button></form>
-<div class="demo-accounts"><span>حسابات تجريبية:</span><button data-demo="admin@castiraq.com">Admin</button><button data-demo="company@castiraq.com">Company</button><button data-demo="talent@castiraq.com">Talent</button></div>
-</div>
-<div id="signupView" class="hidden">
-<h2>إنشاء حساب</h2><p class="muted">اختار نوع الحساب أولاً.</p>
-<div class="account-types"><button class="account-type active" data-type="talent"><b>🎭 موهبة</b><span>ممثل، مودل، UGC، كومبارس</span></button><button class="account-type" data-type="company"><b>🎬 شركة / مخرج</b><span>Production، Agency، Director</span></button></div>
-<form id="signupForm" class="form-stack"><input type="hidden" id="signupType" value="talent"><label>الاسم الكامل / اسم الشركة<input id="signupName" required></label><label>الإيميل<input id="signupEmail" type="email" required></label><label>المدينة<select id="signupCity"><option>بغداد</option><option>أربيل</option><option>البصرة</option><option>النجف</option><option>كربلاء</option></select></label><label>كلمة المرور<input id="signupPassword" type="password" required minlength="4"></label><label class="check"><input type="checkbox" required> أوافق على شروط الاستخدام وسياسة الخصوصية</label><button class="btn primary full">إنشاء الحساب</button></form>
-</div>
-</section></div>
-<script src="app.js"></script></body></html>
+  <div class="auth-shell">
+    <aside class="auth-brand-panel">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>Cast Iraq</span>
+      </a>
+
+      <div class="auth-brand-copy">
+        <span class="eyebrow">منصة الكاستنغ العراقية</span>
+        <h1>سجّل دخولك<br>وابدأ مشروعك.</h1>
+        <p>للمودلز، الممثلين، الشركات، المخرجين والمصورين.</p>
+      </div>
+
+      <div class="auth-points">
+        <div><span>✓</span><p>بروفايل احترافي للمواهب</p></div>
+        <div><span>✓</span><p>Casting Calls وShortlists</p></div>
+        <div><span>✓</span><p>لوحة تحكم منفصلة لكل حساب</p></div>
+      </div>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-card">
+        <div class="auth-tabs">
+          <button id="loginTab" class="active" type="button">تسجيل الدخول</button>
+          <button id="signupTab" type="button">إنشاء حساب</button>
+        </div>
+
+        <section id="loginView">
+          <div class="auth-heading">
+            <h2>أهلاً بعودتك</h2>
+            <p>ادخل بيانات حسابك حتى تفتح الداشبورد.</p>
+          </div>
+
+          <form id="loginForm" class="auth-form">
+            <label>
+              <span>الإيميل</span>
+              <input type="email" id="loginEmail" required placeholder="name@email.com" autocomplete="email">
+            </label>
+
+            <label>
+              <span>كلمة المرور</span>
+              <input type="password" id="loginPassword" required placeholder="••••••••" autocomplete="current-password">
+            </label>
+
+            <button class="btn primary full auth-submit" type="submit">تسجيل الدخول</button>
+          </form>
+
+          <div class="auth-divider"><span>أو جرّب حساب تجريبي</span></div>
+
+          <div class="demo-grid">
+            <button type="button" data-demo="admin@castiraq.com"><b>Admin</b><small>إدارة المنصة</small></button>
+            <button type="button" data-demo="company@castiraq.com"><b>Company</b><small>شركة / مخرج</small></button>
+            <button type="button" data-demo="talent@castiraq.com"><b>Talent</b><small>مودل / ممثل</small></button>
+          </div>
+        </section>
+
+        <section id="signupView" class="hidden">
+          <div class="auth-heading">
+            <h2>إنشاء حساب جديد</h2>
+            <p>اختار نوع حسابك وكمل البيانات.</p>
+          </div>
+
+          <div class="account-types">
+            <button class="account-type active" data-type="talent" type="button">
+              <span class="account-icon">🎭</span>
+              <span><b>موهبة</b><small>ممثل، مودل، UGC، كومبارس</small></span>
+            </button>
+            <button class="account-type" data-type="company" type="button">
+              <span class="account-icon">🎬</span>
+              <span><b>شركة / مخرج</b><small>Production، Agency، Director</small></span>
+            </button>
+          </div>
+
+          <form id="signupForm" class="auth-form">
+            <input type="hidden" id="signupType" value="talent">
+
+            <label>
+              <span>الاسم الكامل / اسم الشركة</span>
+              <input id="signupName" required placeholder="مثال: علي كريم">
+            </label>
+
+            <label>
+              <span>الإيميل</span>
+              <input id="signupEmail" type="email" required placeholder="name@email.com">
+            </label>
+
+            <div class="auth-row">
+              <label>
+                <span>المدينة</span>
+                <select id="signupCity">
+                  <option>بغداد</option><option>أربيل</option><option>البصرة</option><option>النجف</option><option>كربلاء</option>
+                </select>
+              </label>
+              <label>
+                <span>كلمة المرور</span>
+                <input id="signupPassword" type="password" required minlength="4" placeholder="4 أحرف أو أكثر">
+              </label>
+            </div>
+
+            <label class="terms-row">
+              <input type="checkbox" required>
+              <span>أوافق على شروط الاستخدام وسياسة الخصوصية</span>
+            </label>
+
+            <button class="btn primary full auth-submit" type="submit">إنشاء الحساب</button>
+          </form>
+        </section>
+
+        <a class="back-home" href="index.html">← رجوع للموقع</a>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
