@@ -1,3 +1,7 @@
+# Cast Iraq — Release V3 (Publish Candidate)
+
+هذه النسخة تلغي كاش وإصدارات Service Worker القديمة تلقائياً وتستخدم assets ذات أسماء Versioned لمنع خلط CSS/JS على GitHub Pages.
+
 # Cast Iraq — Publishable Beta Release
 
 نسخة Beta تجريبية موحدة ومختبرة لمنصة Cast Iraq. تشتغل مباشرة على GitHub Pages بدون Backend خارجي، وتستخدم LocalStorage حتى كل الـworkflow يشتغل فوراً للتجربة والعرض.
