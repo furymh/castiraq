@@ -1,0 +1,45 @@
+CAST IRAQ V7 — RELEASE QA SUMMARY
+Build: 7.0.0
+
+PRODUCT DIRECTION
+- Clarity-first UX inspired by Apple principles: fewer decisions, stronger hierarchy, consistent spacing, restrained surfaces.
+- Social experience inspired by Instagram patterns: mobile app shell, bottom navigation, central publish action, feed, reels, profile media grid.
+- Casting workflow preserved: talent discovery, casting calls, applications, shortlists, self-tapes, scheduling, messages and role-specific dashboards.
+
+FIXES / CHANGES
+- Restored and versioned all required runtime files: styles.v7.css, db.v7.js, app.v7.js.
+- V7 uses independent localStorage/session keys; old V4/V5/V6 state cannot corrupt the release.
+- Simplified desktop navigation and added clear active-page state.
+- Mobile uses an app-like top bar and five-action bottom navigation.
+- Central publish action is visually dominant and touch-friendly.
+- Unified buttons, forms, cards, panels, typography, radii and spacing.
+- Simplified mobile feed surfaces and removed unnecessary chrome/footer clutter on small screens.
+- Improved mobile dashboard access with horizontal role-specific tabs.
+- Improved tables, modals, forms, focus states and touch targets.
+- Local demo images/videos retained with fallback image handling.
+- Legacy service-worker caches are proactively removed by app runtime to prevent mixed-version visual corruption.
+
+STATIC RELEASE QA
+- All HTML pages include viewport metadata.
+- Duplicate HTML IDs: 0.
+- Missing local href/src dependencies: 0.
+- JavaScript syntax: PASS (app.v7.js, db.v7.js).
+- CSS brace integrity: PASS.
+
+DATA / WORKFLOW QA (automated DB layer)
+- Seed/init: PASS.
+- Talent login: PASS.
+- Create social post: PASS.
+- Like: PASS.
+- Save: PASS.
+- Comment: PASS.
+- Duplicate casting application blocked: PASS.
+- Logout: PASS.
+- Register new talent + profile creation: PASS.
+- Company shortlist create/add: PASS.
+- Company casting creation: PASS.
+- Self-tape request: PASS.
+- Self-tape submission/status transition: PASS.
+
+IMPORTANT RELEASE BOUNDARY
+V7 is a frontend/demo production candidate. Shared real accounts, authorization, uploads, rate limiting and secure cross-device data still require the planned backend/Supabase implementation before accepting real users.

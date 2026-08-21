@@ -1,0 +1,56 @@
+[
+  {
+    "name": "seed",
+    "ok": true,
+    "users": 3,
+    "talents": 8
+  },
+  {
+    "name": "login talent",
+    "ok": true
+  },
+  {
+    "name": "create post",
+    "ok": true
+  },
+  {
+    "name": "like post",
+    "ok": true
+  },
+  {
+    "name": "save post",
+    "ok": true
+  },
+  {
+    "name": "comment",
+    "ok": true
+  },
+  {
+    "name": "duplicate application blocked",
+    "ok": true
+  },
+  {
+    "name": "logout",
+    "ok": true
+  },
+  {
+    "name": "register",
+    "ok": true
+  },
+  {
+    "name": "shortlist",
+    "ok": true
+  },
+  {
+    "name": "create casting",
+    "ok": true
+  },
+  {
+    "name": "self tape request",
+    "ok": true
+  },
+  {
+    "name": "self tape submit",
+    "ok": true
+  }
+]
