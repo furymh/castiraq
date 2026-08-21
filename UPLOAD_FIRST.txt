@@ -1,14 +1,3 @@
-CAST IRAQ V4 — FLAT DEPLOY
-
-Important: upload EVERY file in this folder directly to the repository root.
-There are NO required subfolders in this build.
-
-Critical runtime files:
-- styles.v4.css
-- db.v4.js
-- app.v4.js
-- image-placeholder.svg
-- showreel-demo.mp4
-- ugc-demo.mp4
-
-After upload, hard refresh once: Ctrl+Shift+R.
+CAST IRAQ V5 MOBILE PRO
+ارفع كل هذه الملفات مباشرة إلى root في GitHub واستبدل النسخة القديمة.
+الملفات الأساسية: index.html, styles.v5.css, app.v5.js, db.v5.js

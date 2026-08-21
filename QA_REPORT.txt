@@ -1,0 +1,41 @@
+CAST IRAQ V5 — QA REPORT
+
+PASS — Talent mobile:
+- App top bar
+- Bottom navigation
+- Feed rendering
+- Create post flow
+- Instagram-style profile stats
+- Portfolio tabs/grid
+- No horizontal overflow
+
+PASS — Company:
+- Dashboard
+- Talent search
+- Add to shortlist
+- Applicant manager
+- Self-Tape action availability
+
+PASS — Admin:
+- Overview
+- Appearance manager
+- Rotating banner manager
+- Content moderation
+- User management
+- Suspend/delete logic
+- Verification
+- Casting moderation
+- Reports
+- Revenue
+- Audit log
+- System/export/reset views
+
+PASS — Home/mobile:
+- App navigation
+- Managed rotating banners
+- No horizontal overflow
+
+Syntax checks:
+- app.v5.js PASS
+- db.v5.js PASS
+- Internal file references: 0 missing
