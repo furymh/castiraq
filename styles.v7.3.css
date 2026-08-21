@@ -143,3 +143,91 @@ input,select,textarea{max-width:100%;min-width:0}.table-wrap{max-width:100%}
 .dashboard-main .metric{min-width:0}
 @media(max-width:1180px){.v6-kanban{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.v6-kanban{grid-template-columns:1fr}.v6-kanban-col{width:100%}}
+
+/* ===== V7.3.2 GLOBAL LAYOUT SYSTEM ===== */
+:root{
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-7:32px;--space-8:40px;
+  --card-radius:18px;--card-pad:20px;--grid-gap:16px;--section-gap:24px;
+}
+
+/* Consistent vertical rhythm in dashboard and content areas */
+.dashboard-content,.dashboard-main #dashboardContent{display:flex;flex-direction:column;gap:var(--section-gap);min-width:0}
+.dashboard-main #dashboardContent>*,.dashboard-content>*{margin-block:0!important}
+
+/* Global card language */
+.panel,.metric,.mini-card,.dashboard-tile,.kpi-mini,.setting-row,.quick-item,.casting-item{
+  border-radius:var(--card-radius);
+  box-sizing:border-box;
+}
+.panel{padding:var(--card-pad)}
+.panel-head{margin-bottom:var(--space-4)}
+
+/* Equal KPI cards */
+.metrics,.dashboard-kpis{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:var(--grid-gap);
+  align-items:stretch;
+}
+.metric{
+  min-height:164px;
+  height:100%;
+  padding:var(--card-pad);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:var(--space-3);
+}
+.metric>span,.metric>b,.metric>small{display:block;margin:0}
+.metric>b{margin-block:auto 0}
+.metric>small{margin-top:var(--space-2)}
+
+/* Balanced two-column feature rows */
+.grid-2{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:var(--grid-gap);
+  align-items:stretch;
+}
+.grid-2>.panel,.grid-2>.mini-card{height:100%;min-height:100%}
+.grid-2>.panel{display:flex;flex-direction:column}
+.grid-2>.panel>.quick-list,.grid-2>.panel>.bar-row:first-of-type{margin-top:0}
+
+/* Consistent inner spacing */
+.quick-list{display:flex;flex-direction:column;gap:var(--space-3)}
+.quick-item{padding:var(--space-4);gap:var(--space-4);margin:0}
+.mini-grid{gap:var(--grid-gap)}
+.mini-card{padding:var(--card-pad);height:100%;display:flex;flex-direction:column;gap:var(--space-3)}
+.mini-card .btn,.mini-card button{margin-top:auto;align-self:flex-start}
+.bar-row{margin:0 0 var(--space-4)}
+.bar-row:last-child{margin-bottom:0}
+
+/* Section separation on public pages */
+.section+.section{margin-top:0}
+.section .section-head{margin-bottom:var(--space-6)}
+.talent-grid,.casting-list,.workflow-grid,.pricing-grid{gap:var(--grid-gap)}
+.social-center>*+*{margin-top:var(--space-4)}
+.feed-list{gap:var(--space-5)}
+.profile-main,.profile-side{gap:var(--grid-gap)}
+
+/* Avoid cramped actions */
+.card-actions,.profile-header-actions,.panel-head .actions,.quick-item .actions,.action-row{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+}
+
+@media(max-width:1100px){
+  .metrics,.dashboard-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:920px){
+  :root{--card-pad:16px;--grid-gap:12px;--section-gap:18px}
+  .grid-2{grid-template-columns:1fr}
+  .metrics,.dashboard-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .metric{min-height:138px}
+}
+@media(max-width:480px){
+  :root{--card-pad:14px;--grid-gap:10px;--section-gap:16px}
+  .metrics,.dashboard-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .metric{min-height:124px}
+  .quick-item{padding:12px;gap:12px}
+}
+
