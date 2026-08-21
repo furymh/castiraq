@@ -1,0 +1,12 @@
+Cast Iraq V7.2.2 Mobile Navigation Shell Fix
+
+Root cause fixed:
+- mobile-app-bar was appended at end of BODY, so sticky positioning made it appear near page bottom after content.
+- it is now prepended at top of BODY.
+- app-bottom-nav remains the single fixed bottom navigation.
+- dashboard keeps its own top header and only the single bottom nav.
+
+Expected mobile structure:
+TOP: mobile-app-bar (except dashboard/auth/settings)
+CONTENT
+BOTTOM: app-bottom-nav
