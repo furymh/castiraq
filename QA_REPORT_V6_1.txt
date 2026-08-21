@@ -1,0 +1,115 @@
+Cast Iraq V6.1 Release Validation — 113/113 PASS
+
+PASS — file:index.html
+PASS — file:feed.html
+PASS — file:reels.html
+PASS — file:explore.html
+PASS — file:talent.html
+PASS — file:castings.html
+PASS — file:casting.html
+PASS — file:company.html
+PASS — file:dashboard.html
+PASS — file:auth.html
+PASS — file:settings.html
+PASS — file:shortlist.html
+PASS — file:styles.v6.css
+PASS — file:app.v6.js
+PASS — file:db.v6.js
+PASS — file:manifest.webmanifest
+PASS — file:image-placeholder.svg
+PASS — file:talent1.jpg
+PASS — file:talent8.jpg
+PASS — file:hero-v6.jpg
+PASS — file:banner1-v6.jpg
+PASS — terms.html:unique ids
+PASS — terms.html:ref:manifest.webmanifest
+PASS — terms.html:ref:styles.v6.css
+PASS — terms.html:ref:db.v6.js
+PASS — terms.html:ref:app.v6.js
+PASS — reels.html:unique ids
+PASS — reels.html:ref:styles.v6.css
+PASS — reels.html:ref:db.v6.js
+PASS — reels.html:ref:app.v6.js
+PASS — casting.html:unique ids
+PASS — casting.html:ref:manifest.webmanifest
+PASS — casting.html:ref:styles.v6.css
+PASS — casting.html:ref:db.v6.js
+PASS — casting.html:ref:app.v6.js
+PASS — explore.html:unique ids
+PASS — explore.html:ref:manifest.webmanifest
+PASS — explore.html:ref:styles.v6.css
+PASS — explore.html:ref:db.v6.js
+PASS — explore.html:ref:app.v6.js
+PASS — dashboard.html:unique ids
+PASS — dashboard.html:ref:styles.v6.css
+PASS — dashboard.html:ref:db.v6.js
+PASS — dashboard.html:ref:app.v6.js
+PASS — company.html:unique ids
+PASS — company.html:ref:manifest.webmanifest
+PASS — company.html:ref:styles.v6.css
+PASS — company.html:ref:db.v6.js
+PASS — company.html:ref:app.v6.js
+PASS — settings.html:unique ids
+PASS — settings.html:ref:manifest.webmanifest
+PASS — settings.html:ref:styles.v6.css
+PASS — settings.html:ref:db.v6.js
+PASS — settings.html:ref:app.v6.js
+PASS — index.html:unique ids
+PASS — index.html:ref:manifest.webmanifest
+PASS — index.html:ref:styles.v6.css
+PASS — index.html:ref:db.v6.js
+PASS — index.html:ref:app.v6.js
+PASS — index.html:ref:hero-v6.jpg
+PASS — index.html:ref:company-v6.jpg
+PASS — privacy.html:unique ids
+PASS — privacy.html:ref:manifest.webmanifest
+PASS — privacy.html:ref:styles.v6.css
+PASS — privacy.html:ref:db.v6.js
+PASS — privacy.html:ref:app.v6.js
+PASS — castings.html:unique ids
+PASS — castings.html:ref:manifest.webmanifest
+PASS — castings.html:ref:styles.v6.css
+PASS — castings.html:ref:db.v6.js
+PASS — castings.html:ref:app.v6.js
+PASS — talent.html:unique ids
+PASS — talent.html:ref:manifest.webmanifest
+PASS — talent.html:ref:styles.v6.css
+PASS — talent.html:ref:db.v6.js
+PASS — talent.html:ref:app.v6.js
+PASS — auth.html:unique ids
+PASS — auth.html:ref:manifest.webmanifest
+PASS — auth.html:ref:styles.v6.css
+PASS — auth.html:ref:db.v6.js
+PASS — auth.html:ref:app.v6.js
+PASS — shortlist.html:unique ids
+PASS — shortlist.html:ref:manifest.webmanifest
+PASS — shortlist.html:ref:styles.v6.css
+PASS — shortlist.html:ref:db.v6.js
+PASS — shortlist.html:ref:app.v6.js
+PASS — 404.html:unique ids
+PASS — 404.html:ref:styles.v6.css
+PASS — 404.html:ref:db.v6.js
+PASS — 404.html:ref:app.v6.js
+PASS — feed.html:unique ids
+PASS — feed.html:ref:manifest.webmanifest
+PASS — feed.html:ref:styles.v6.css
+PASS — feed.html:ref:db.v6.js
+PASS — feed.html:ref:app.v6.js
+PASS — db.v6.js:no external pexels
+PASS — index.html:no external pexels
+PASS — feature:Reels
+PASS — feature:Match Score
+PASS — feature:Profile Highlights
+PASS — feature:Casting Readiness
+PASS — feature:Mobile Dashboard Tabs
+PASS — feature:Applicant Pipeline
+PASS — feature:Admin Preview
+PASS — feature:Self Tape
+PASS — feature:Post Create
+PASS — feature:Shortlist
+PASS — app.v6.js:syntax
+PASS — db.v6.js:syntax
+PASS — styles.v6.css:brace balance — 1277/1277
+PASS — db:v6 isolated key
+PASS — db:local talent media
+PASS — db:local hero/banner

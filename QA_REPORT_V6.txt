@@ -1,0 +1,60 @@
+Cast Iraq V6 QA — 58/58 PASS
+
+PASS — mobile:index.html
+PASS — mobile:feed.html
+PASS — mobile:explore.html
+PASS — mobile:talent.html
+PASS — mobile:castings.html
+PASS — mobile:casting.html
+PASS — mobile:auth.html
+PASS — mobile:reels.html
+PASS — desktop:index.html
+PASS — desktop:feed.html
+PASS — desktop:explore.html
+PASS — desktop:talent.html
+PASS — desktop:castings.html
+PASS — desktop:casting.html
+PASS — desktop:auth.html
+PASS — desktop:reels.html
+PASS — feed posts render
+PASS — feed stories render
+PASS — mobile app nav 5 items
+PASS — talent can create post
+PASS — profile highlights
+PASS — profile readiness
+PASS — profile instagram grid
+PASS — casting match scores
+PASS — talent dashboard role home
+PASS — talent dashboard profile
+PASS — talent dashboard portfolio
+PASS — talent dashboard opportunities
+PASS — talent dashboard applications
+PASS — talent dashboard selftapes
+PASS — talent dashboard messages
+PASS — talent dashboard analytics
+PASS — talent dashboard overview
+PASS — talent applications table
+PASS — company dashboard role home
+PASS — company dashboard projects
+PASS — company dashboard submissions
+PASS — company dashboard search
+PASS — company dashboard shortlists
+PASS — company dashboard selftapes
+PASS — company dashboard schedule
+PASS — company dashboard messages
+PASS — company dashboard overview
+PASS — company applicant table
+PASS — admin dashboard role home
+PASS — admin dashboard appearance
+PASS — admin dashboard banners
+PASS — admin dashboard content
+PASS — admin dashboard users
+PASS — admin dashboard verification
+PASS — admin dashboard castings
+PASS — admin dashboard reports
+PASS — admin dashboard revenue
+PASS — admin dashboard audit
+PASS — admin dashboard system
+PASS — admin dashboard overview
+PASS — admin phone live preview
+PASS — admin user table

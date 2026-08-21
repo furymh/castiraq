@@ -1,0 +1,296 @@
+{
+  "passed": 58,
+  "total": 58,
+  "results": [
+    {
+      "test": "mobile:index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "mobile:feed.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "mobile:explore.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "mobile:talent.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "mobile:castings.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "mobile:casting.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "mobile:auth.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "mobile:reels.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "desktop:index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "desktop:feed.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "desktop:explore.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "desktop:talent.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "desktop:castings.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "desktop:casting.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "desktop:auth.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "desktop:reels.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "feed posts render",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "feed stories render",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "mobile app nav 5 items",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent can create post",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "profile highlights",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "profile readiness",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "profile instagram grid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "casting match scores",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard role home",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard profile",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard portfolio",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard opportunities",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard applications",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard selftapes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard messages",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard analytics",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent dashboard overview",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "talent applications table",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard role home",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard projects",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard submissions",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard search",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard shortlists",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard selftapes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard schedule",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard messages",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company dashboard overview",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "company applicant table",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard role home",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard appearance",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard banners",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard content",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard users",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard verification",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard castings",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard reports",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard revenue",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard audit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard system",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin dashboard overview",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin phone live preview",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "admin user table",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}
