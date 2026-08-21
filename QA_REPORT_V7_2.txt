@@ -1,0 +1,54 @@
+Cast Iraq V7.2 — UI/UX Cleanup QA
+Date: 2026-08-21
+
+ROOT CAUSE FIXED
+- Removed the layered dark/light CSS architecture from V7.1.x.
+- Replaced styles.v7.css with one clean Light-first design system.
+- Standardized typography, spacing, buttons, forms, cards, filters, navigation and dashboards.
+- Normal pages contain no large dark sections. Reels remains intentionally immersive/dark.
+
+USER-REPORTED ISSUES
+PASS — Auth dark half removed; login/signup card is light and readable.
+PASS — Explore dark hero/filter panel removed.
+PASS — Casting Match badge no longer overlaps Details button (separate grid area).
+PASS — Desktop navigation no longer uses a large black capsule.
+PASS — Dashboard banners/cards no longer inherit old dark styles.
+PASS — Mobile dashboard bottom navigation remains enabled.
+PASS — Mobile filters collapse to one column, preventing control collisions.
+PASS — Touch actions use >= 42px default targets; bottom nav create is 46px.
+
+STATIC RELEASE VALIDATION
+PASS — JavaScript syntax: app.v7.js
+PASS — JavaScript syntax: db.v7.js
+PASS — CSS parse errors: 0
+PASS — Missing local href/src files: 0
+PASS — Duplicate HTML IDs: 0
+PASS — Versioned stylesheet/scripts: 7.2.0
+PASS — Service worker cache updated to V7.2 (while app also unregisters stale workers).
+
+DATA/FLOW TESTS
+PASS — Seed DB initialization
+PASS — Talent login
+PASS — Create post
+PASS — Like post
+PASS — Add comment
+PASS — Submit casting application
+PASS — Duplicate application prevention
+PASS — Company login
+PASS — Create shortlist
+PASS — Create casting project
+
+BREAKPOINT REVIEW
+Desktop: >= 1100
+Tablet: 921–1099
+Mobile: <= 920
+Small mobile: <= 480
+
+DESIGN RULES
+- Background: #f5f5f7
+- Surface/cards: white
+- Primary action: #0071e3
+- Main text: #1d1d1f
+- Muted text: #6e6e73
+- Lines: #e5e5e7
+- Black is reserved for typography/logo and Reels overlays, not page sections.

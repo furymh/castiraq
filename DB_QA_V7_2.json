@@ -1,0 +1,52 @@
+[
+  [
+    "seed",
+    true,
+    true
+  ],
+  [
+    "login talent",
+    true,
+    true
+  ],
+  [
+    "create post",
+    true,
+    "post-1787313194668"
+  ],
+  [
+    "like post",
+    true,
+    true
+  ],
+  [
+    "comment post",
+    true,
+    "pc-1787313194669"
+  ],
+  [
+    "application",
+    true,
+    "a-1787313194670"
+  ],
+  [
+    "duplicate application blocked",
+    true,
+    true
+  ],
+  [
+    "login company",
+    true,
+    true
+  ],
+  [
+    "shortlist",
+    true,
+    "s-1787313194671"
+  ],
+  [
+    "casting",
+    true,
+    "p-1787313194671"
+  ]
+]
