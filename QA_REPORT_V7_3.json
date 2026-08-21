@@ -1,0 +1,123 @@
+{
+  "version": "7.3.0",
+  "routes": [
+    {
+      "file": "404.html",
+      "page": "404",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "auth.html",
+      "page": "auth",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "casting.html",
+      "page": "casting",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "castings.html",
+      "page": "castings",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "company.html",
+      "page": "company",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "dashboard.html",
+      "page": "dashboard",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "explore.html",
+      "page": "explore",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "feed.html",
+      "page": "feed",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "index.html",
+      "page": "home",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "privacy.html",
+      "page": "privacy",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "reels.html",
+      "page": "reels",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "settings.html",
+      "page": "settings",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "shortlist.html",
+      "page": "shortlist",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "talent.html",
+      "page": "talent",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    },
+    {
+      "file": "terms.html",
+      "page": "terms",
+      "duplicate_ids": [],
+      "missing_local_refs": [],
+      "unlabelled_controls": []
+    }
+  ],
+  "checks": {
+    "html_routes": 15,
+    "issues": 0,
+    "css_braces_balanced": true,
+    "css_media_queries": 6,
+    "uses_100vw": false,
+    "uses_overflow_x_hidden": false,
+    "uses_100dvh": true,
+    "old_patch_markers": 0,
+    "fixed_width_3digit": 2,
+    "min_width_3digit": 2
+  },
+  "risks": []
+}

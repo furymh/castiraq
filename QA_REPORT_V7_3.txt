@@ -1,0 +1,18 @@
+Cast Iraq V7.3 — Responsive Architecture QA
+
+- Consolidated V7.2.1–V7.2.6 patch layers into one responsive architecture section.
+- Removed company-login.html test artifact from release.
+- 15 production HTML routes audited.
+- Local asset/route reference validation.
+- Duplicate ID validation.
+- Form control accessible-name validation.
+- JavaScript syntax validation for app.v7.js and db.v7.js.
+- CSS brace/integrity validation.
+- Mobile tables convert to card rows inside dashboard.
+- Single bottom-navigation layout with safe-area padding.
+- Unified 44px touch targets for social actions and app icons.
+- Replaced mixed dashboard emoji nav icons with text-only navigation for visual consistency.
+- Replaced 100vh shell sizing with 100dvh.
+- No overflow-x:hidden masking rule added.
+
+Important: this release keeps the existing demo business logic and LocalStorage data model unchanged.
