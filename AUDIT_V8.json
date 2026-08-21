@@ -1,0 +1,43 @@
+{
+  "version": "8.0.0",
+  "routes": [
+    "404.html",
+    "auth.html",
+    "casting.html",
+    "castings.html",
+    "company.html",
+    "dashboard.html",
+    "explore.html",
+    "feed.html",
+    "index.html",
+    "privacy.html",
+    "reels.html",
+    "settings.html",
+    "shortlist.html",
+    "talent.html",
+    "terms.html"
+  ],
+  "references": [
+    "Casting Networks",
+    "Backstage",
+    "Spotlight",
+    "Instagram-style social UX"
+  ],
+  "priorities": {
+    "P0": [
+      "responsive kanban conflicts",
+      "navigation access consistency",
+      "permissions only visual"
+    ],
+    "P1": [
+      "card/spacing consistency",
+      "admin control fragmentation",
+      "feature visibility hardcoded"
+    ],
+    "P2": [
+      "empty states",
+      "microcopy",
+      "visual polish"
+    ]
+  }
+}

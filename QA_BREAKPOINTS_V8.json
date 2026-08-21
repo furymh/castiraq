@@ -1,0 +1,25 @@
+{
+  "checks": 52,
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    430,
+    480,
+    768,
+    820,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "routes": [
+    "feed.html",
+    "explore.html",
+    "castings.html",
+    "talent.html?id=t1"
+  ],
+  "overflow_fail": []
+}

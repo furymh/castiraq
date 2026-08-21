@@ -1,0 +1,7 @@
+{
+  "adminToggle": true,
+  "audit": true,
+  "companyDenied": true,
+  "companyCreate": true,
+  "talentDenied": true
+}

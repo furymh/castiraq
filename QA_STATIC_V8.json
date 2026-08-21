@@ -1,0 +1,32 @@
+{
+  "summary": {
+    "routes": 15,
+    "route_names": [
+      "404.html",
+      "auth.html",
+      "casting.html",
+      "castings.html",
+      "company.html",
+      "dashboard.html",
+      "explore.html",
+      "feed.html",
+      "index.html",
+      "privacy.html",
+      "reels.html",
+      "settings.html",
+      "shortlist.html",
+      "talent.html",
+      "terms.html"
+    ],
+    "issues": 0,
+    "important_count": 54,
+    "media_queries": 15,
+    "uses_overflow_x_hidden": false,
+    "css_bytes": 60002,
+    "app_bytes": 110667,
+    "db_bytes": 34448,
+    "features": 10,
+    "seed_roles": 6
+  },
+  "issues": []
+}

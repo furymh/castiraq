@@ -1,0 +1,14 @@
+{
+  "route_checks": 42,
+  "overflow_fail": [],
+  "console_errors": [],
+  "small_touch_counts": {},
+  "rbac": {
+    "adminToggle": true,
+    "audit": true,
+    "companyDenied": true,
+    "companyCreate": true,
+    "talentDenied": true
+  },
+  "note": "Public-route browser smoke; RBAC verified separately in deterministic Node VM."
+}
