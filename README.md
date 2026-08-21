@@ -1,49 +1,52 @@
-# Cast Iraq — Final Demo
+# Cast Iraq — Publishable Beta Release
 
-نسخة تجريبية كاملة تعمل مباشرة على GitHub Pages بدون Backend خارجي، وتستخدم LocalStorage كـ Demo Database حتى تقدر تختبر كل الـworkflow فوراً.
+نسخة Beta تجريبية موحدة ومختبرة لمنصة Cast Iraq. تشتغل مباشرة على GitHub Pages بدون Backend خارجي، وتستخدم LocalStorage حتى كل الـworkflow يشتغل فوراً للتجربة والعرض.
 
 ## حسابات التجربة
 - Talent: `talent@castiraq.demo` / `123456`
 - Company: `company@castiraq.demo` / `123456`
 - Admin: `admin@castiraq.demo` / `123456`
 
-## الموجود فعلياً بالنسخة
-- Landing page احترافية
-- Talent discovery + advanced filters
-- Talent public profile
-- Casting Calls + role detail + apply
-- تسجيل ودخول Talent / Company
-- Talent dashboard: profile, opportunities, applications, self-tapes, messages, analytics
-- Company dashboard: projects, applicant pipeline, talent search, shortlists, self-tapes, audition schedule, messages
-- Admin dashboard: users, verification, moderation, reports, revenue, audit log
-- Client shortlist / presentation page
-- Settings / privacy / notifications
-- PWA manifest + service worker
-- Supabase/Postgres production schema + RLS policies
+## الصفحات والوظائف
+- Landing Page
+- `feed.html` — Discover / Social Portfolio Feed للصور والفيديو والأعمال
+- `explore.html` — دليل المواهب + فلاتر
+- `talent.html` — بروفايل موهبة + Portfolio Feed + Media + Credits
+- `company.html` — صفحة شركة/جهة كاستنغ
+- `castings.html` + `casting.html` — Casting Calls + Roles + Apply
+- `auth.html` — Login / Signup للموهبة والشركة
+- `dashboard.html` — Dashboard مختلفة لـTalent / Company / Admin
+- `settings.html` — الحساب والخصوصية والإشعارات
+- `shortlist.html` — Client Presentation / Shortlist
+- Privacy / Terms / 404
+- PWA manifest + Service Worker
 
-## Demo Database
-النسخة المنشورة على GitHub Pages تستخدم `localStorage`، يعني البيانات تتشارك بين صفحات نفس المتصفح لكنها ليست مشتركة بين أجهزة مختلفة. هذا مقصود حتى تكون النسخة التجريبية شغالة فوراً بدون مفاتيح أو خدمة خارجية.
+## Workflow الشركة
+Project → Roles → Submissions → Review/Selected/Consideration → Self-Tape → Callback/Availability/Hold → Booked/Rejected، مع Shortlists وMessages وSchedule Demo.
 
-## تحويلها إلى Production حقيقي
-1. أنشئ Supabase project.
-2. شغّل `supabase/schema.sql` ثم `supabase/rls.sql` في SQL Editor.
-3. أنشئ Storage buckets:
-   - `profile-media` (public photos / optional public video)
-   - `self-tapes` (private)
-   - `verification-documents` (private)
-   - `project-attachments` (private or signed URLs)
-4. اربط Auth + database calls بدل `assets/db.js` local adapter.
-5. لا تضع Supabase service-role key في الواجهة؛ فقط anon key. عمليات Admin الحساسة عبر Edge Function / server.
+## Social / Portfolio
+الموهبة تگدر تنشر صورة أو فيديو أو Work Credit، ويظهر المحتوى في Discover وبنفس الوقت داخل Portfolio مال البروفايل. الـDemo يدعم Like / Save / Comment وإدارة المنشورات.
 
-## ملاحظات أمان
-- النسخة التجريبية 18+ فقط.
-- Self-tapes ووثائق التوثيق لازم تبقى Private في Production.
-- Client shortlist العام يفضل استخدام public token + expiry + RPC محدود.
-- بيانات الاتصال لا تظهر إلا بموافقة المستخدم.
+## Backend داخل الحزمة
+`backend/server.py` + `backend/castiraq_demo.sqlite` عبارة عن API تجريبي فعلي Python/SQLite لاختبار المنطق خارج المتصفح.
+
+## Production Database
+مجلد `supabase/` يحتوي:
+- PostgreSQL schema
+- RLS policies
+- Auth signup trigger
+- Storage buckets/policies
+- Production indexes
+
+راجع `supabase/README.md` للترتيب الصحيح.
+
+## مهم قبل الإطلاق الحقيقي
+نسخة GitHub Pages الحالية **Beta/Demo**: بيانات الحسابات والمنشورات محفوظة داخل متصفح كل جهاز وليست مشتركة بين المستخدمين. هذا مناسب للنشر كنسخة تجريبية عامة وعرض المنتج.
+
+حتى تتحول إلى Production متعدد المستخدمين، اربط الواجهة بمشروع Supabase الحقيقي باستخدام Project URL + public anon key بعد تشغيل ملفات SQL. لا تستخدم Service Role داخل الواجهة نهائياً.
 
 ## النشر على GitHub Pages
-ارفع كل الملفات كما هي إلى root للـrepository. GitHub Pages يفتح `index.html` تلقائياً.
+ارفع **محتويات هذا المجلد نفسها** إلى root للـrepository (لا ترفع المجلد الأب). فعّل Pages على `main / root`، وبعد اكتمال الـdeploy افتح `index.html` من رابط GitHub Pages.
 
-
-## Social Portfolio Feed
-تمت إضافة `feed.html`: صور + فيديو + أعمال سابقة + Likes + Saves + Comments + نشر للمواهب + Portfolio داخل البروفايل. نسخة GitHub Pages تستخدم localStorage، وSupabase schema يحتوي الجداول والسياسات اللازمة للإنتاج.
+## QA
+تفاصيل الفحص النهائي داخل `docs/FINAL_QA.md`.

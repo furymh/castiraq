@@ -1,9 +1,17 @@
 {
   "name": "Cast Iraq",
-  "short_name": "CastIraq",
+  "short_name": "Cast Iraq",
+  "description": "منصة كاستنغ عراقية للمواهب وشركات الإنتاج",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0b0d10",
-  "theme_color": "#0b0d10",
-  "icons": []
+  "background_color": "#090b0f",
+  "theme_color": "#090b0f",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": [
+    "business",
+    "entertainment",
+    "social"
+  ]
 }
