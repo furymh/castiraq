@@ -1,0 +1,67 @@
+[
+  {
+    "test": "photographer demo login",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "photographer profile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "create project",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "add talents",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "storyboard + duplicate",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "reorder",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "task done",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "delete shot",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "undo restore",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "talent denied photographer project",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "company denied feature toggle",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "admin can disable storyboard",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "audit logged",
+    "pass": true,
+    "detail": ""
+  }
+]

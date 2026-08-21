@@ -1,0 +1,18 @@
+[
+  {
+    "test": "save talent toggles",
+    "pass": true
+  },
+  {
+    "test": "register photographer",
+    "pass": true
+  },
+  {
+    "test": "register creates profile",
+    "pass": true
+  },
+  {
+    "test": "photographer registration respects feature flag",
+    "pass": true
+  }
+]

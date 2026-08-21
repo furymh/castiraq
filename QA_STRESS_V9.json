@@ -1,0 +1,12 @@
+[
+  {
+    "test": "100 shots created",
+    "pass": true,
+    "detail": "100"
+  },
+  {
+    "test": "100 shot operation reasonable",
+    "pass": true,
+    "detail": "416ms"
+  }
+]
