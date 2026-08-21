@@ -101,3 +101,45 @@ input,select,textarea{max-width:100%;min-width:0}.table-wrap{max-width:100%}
 @media(min-width:921px) and (max-width:1180px){
   .container{width:min(100% - 32px,1120px)}.main-nav a{padding-inline:11px}.dashboard-main{padding-inline:22px}.talent-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
+
+/* V7.3.1 Company dashboard pipeline alignment */
+.dashboard-main{width:100%;max-width:100%;overflow-x:clip}
+.metrics,.dashboard-kpis{width:100%;max-width:100%;min-width:0}
+.metric{min-width:0;overflow:hidden}
+.company-pipeline-panel{width:100%;max-width:100%;overflow:hidden}
+.pipeline-head{margin-bottom:16px}
+.v6-kanban{width:100%;max-width:100%;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible;align-items:stretch}
+.v6-kanban-col{min-width:0;display:flex;flex-direction:column}
+.kanban-stage-head{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0;margin-bottom:8px}
+.kanban-stage-head b{font-size:13px;line-height:1.4;white-space:normal;overflow-wrap:anywhere}
+.kanban-count{display:inline-grid;place-items:center;flex:0 0 auto;min-width:26px;height:26px;padding:0 8px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:11px;font-weight:800;color:#515154}
+.kanban-stage-body{display:grid;gap:8px;min-width:0}
+.v6-kanban-card{min-width:0;margin-top:0}
+.v6-kanban-card b,.v6-kanban-card small{display:block;min-width:0;overflow-wrap:anywhere}
+.kanban-empty{padding:14px 8px;text-align:center;color:var(--muted);font-size:11px}
+@media(max-width:1180px) and (min-width:921px){
+  .v6-kanban{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:920px){
+  .company-pipeline-panel{overflow:visible}
+  .v6-kanban{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,82vw);grid-template-columns:none;overflow-x:auto;overflow-y:hidden;padding-bottom:4px;scroll-snap-type:x proximity}
+  .v6-kanban-col{scroll-snap-align:start}
+}
+
+
+/* V7.3.1 — Company dashboard pipeline spacing */
+.company-pipeline-panel,.v6-role-home,.v6-kanban,.v6-kanban-col,.v6-kanban-card{min-width:0;max-width:100%}
+.v6-kanban{grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible;align-items:start}
+.kanban-stage-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.kanban-stage-head>b{font-size:13px;line-height:1.4;min-width:0}
+.kanban-count{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 8px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--muted);font-size:11px;font-weight:800;flex:none}
+.kanban-stage-body{display:grid;gap:8px}
+.v6-kanban-card{display:grid;gap:6px;padding:12px;margin:0}
+.kanban-talent-name{display:block;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+.kanban-talent-meta{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:11px;line-height:1.5;flex-wrap:wrap}
+.kanban-talent-meta i{font-style:normal;color:#c7c7cc}
+.kanban-empty{padding:10px 2px;color:var(--muted);font-size:11px}
+.dashboard-main>.metrics,.dashboard-main .metrics{width:100%;max-width:100%;min-width:0}
+.dashboard-main .metric{min-width:0}
+@media(max-width:1180px){.v6-kanban{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.v6-kanban{grid-template-columns:1fr}.v6-kanban-col{width:100%}}
