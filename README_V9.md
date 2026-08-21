@@ -29,3 +29,7 @@ Frame-first, progressive disclosure, no call sheets/equipment/versioning/AI/anno
 - QA_RESPONSIVE_STORYBOARD_V9.json
 - QA_STATIC_V9.json
 - COMPETITIVE_STORYBOARD_V9.md
+
+
+## V9.0.1 login migration fix
+Existing V7/V8 LocalStorage is migrated automatically so the Photographer demo account is available without resetting user data.

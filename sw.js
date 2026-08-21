@@ -1,4 +1,4 @@
-const CACHE='castiraq-v8-1';
+const CACHE='castiraq-v9-0-1';
 const CORE=['storyboard.html','photographer-project.html','./','index.html','styles.v9.css','db.v9.js','app.v9.js','image-placeholder.svg'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).catch(()=>{}))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
