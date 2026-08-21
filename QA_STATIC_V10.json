@@ -1,0 +1,26 @@
+{
+  "routes": [
+    "404.html",
+    "auth.html",
+    "casting.html",
+    "castings.html",
+    "company.html",
+    "dashboard.html",
+    "explore.html",
+    "feed.html",
+    "index.html",
+    "moodboard.html",
+    "photographer-project.html",
+    "photographer-tasks.html",
+    "photographer.html",
+    "privacy.html",
+    "reels.html",
+    "settings.html",
+    "shortlist.html",
+    "storyboard.html",
+    "talent.html",
+    "terms.html"
+  ],
+  "missing": [],
+  "duplicate_ids": []
+}

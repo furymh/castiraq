@@ -1,0 +1,48 @@
+[
+  {
+    "name": "login talent",
+    "pass": true,
+    "ms": 0.32,
+    "value": true
+  },
+  {
+    "name": "login company",
+    "pass": true,
+    "ms": 0.34,
+    "value": true
+  },
+  {
+    "name": "login admin",
+    "pass": true,
+    "ms": 0.28,
+    "value": true
+  },
+  {
+    "name": "login photographer",
+    "pass": true,
+    "ms": 0.23,
+    "value": true
+  },
+  {
+    "name": "100 mood items",
+    "pass": true,
+    "ms": 153.37,
+    "value": 100
+  },
+  {
+    "name": "100 shots",
+    "pass": true,
+    "ms": 767.21,
+    "value": 100
+  },
+  {
+    "name": "check counts",
+    "pass": true,
+    "ms": 1.89,
+    "value": {
+      "captured": 60,
+      "retake": 10,
+      "remaining": 40
+    }
+  }
+]
