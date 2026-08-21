@@ -1,153 +1,18 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0d10">
-<title>Cast Iraq — المواهب تبدأ من هنا</title>
-<meta name="description" content="منصة كاستنغ عراقية للممثلين، المودلز، شركات الإنتاج والمخرجين.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.pexels.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body data-page="home" class="premium-home">
-
-<header class="premium-header">
-  <div class="container premium-nav">
-    <a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a>
-    <nav>
-      <a href="#talents">المواهب</a>
-      <a href="#casting">فرص الكاستنغ</a>
-      <a href="#companies">للشركات</a>
-      <a href="#plans">الأسعار</a>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn ghost" href="auth.html#login">تسجيل الدخول</a>
-      <a class="btn primary" href="auth.html#signup">انضم للمنصة</a>
-    </div>
-  </div>
-</header>
-
-<main>
-<section class="premium-hero">
-  <div class="hero-backdrop"></div>
-  <div class="container premium-hero-grid">
-    <div class="premium-hero-copy">
-      <div class="hero-kicker"><span class="pulse-dot"></span> منصة Casting عراقية</div>
-      <h1>موهبتك تستحق<br><span>الفرصة الصح.</span></h1>
-      <p>مكان واحد يجمع الممثلين، المودلز وصناع المحتوى مع شركات الإنتاج والمخرجين. اكتشف، فلتر، اختار وابدأ المشروع.</p>
-      <div class="hero-actions">
-        <a class="btn primary xl" href="auth.html#signup">سجّل كموهبة</a>
-        <a class="btn frosted xl" href="auth.html#signup">أنا شركة / مخرج</a>
-      </div>
-      <div class="trust-row">
-        <div><strong>1,250+</strong><span>موهبة</span></div>
-        <i></i>
-        <div><strong>180+</strong><span>Casting Call</span></div>
-        <i></i>
-        <div><strong>95+</strong><span>شركة ومخرج</span></div>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="hero-img-main">
-        <img src="https://images.pexels.com/photos/31686699/pexels-photo-31686699.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="مودل في استوديو تصوير" loading="eager">
-        <div class="image-overlay-card">
-          <div class="mini-avatar">S</div>
-          <div><b>Sarah M.</b><span>Model · Baghdad</span></div>
-          <span class="verified-pill">✓ موثق</span>
-        </div>
-      </div>
-      <div class="floating-card fc-one"><span>🎬</span><div><b>23</b><small>فرصة مناسبة اليوم</small></div></div>
-      <div class="floating-card fc-two"><span>★</span><div><b>Shortlisted</b><small>تم اختيارك للقائمة</small></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="logo-strip">
-  <div class="container"><span>مصمم لـ</span><b>PRODUCTION HOUSES</b><b>AGENCIES</b><b>DIRECTORS</b><b>PHOTOGRAPHERS</b><b>BRANDS</b></div>
-</section>
-
-<section class="section premium-section" id="talents">
-<div class="container">
-  <div class="premium-section-head">
-    <div><span class="eyebrow">اكتشف المواهب</span><h2>وجوه جاهزة لمشروعك القادم</h2><p>اختيارات متنوعة مع معلومات واضحة وفلاتر مباشرة.</p></div>
-    <a href="auth.html#signup" class="round-link">عرض كل المواهب ←</a>
-  </div>
-  <div class="premium-filters">
-    <div class="search-wide">⌕ <input id="searchInput" placeholder="اسم، مهارة، نوع موهبة..."></div>
-    <select id="cityFilter"><option value="">كل المدن</option><option>بغداد</option><option>أربيل</option><option>البصرة</option><option>النجف</option></select>
-    <select id="typeFilter"><option value="">كل الفئات</option><option>ممثل</option><option>مودل</option><option>UGC</option><option>كومبارس</option></select>
-  </div>
-  <div class="talent-grid premium-talents" id="talentGrid"></div>
-</div>
-</section>
-
-<section class="section casting-premium" id="casting">
-<div class="container">
-  <div class="premium-section-head light-head">
-    <div><span class="eyebrow">Casting Calls</span><h2>الفرصة الجاية ممكن تكون إلك</h2><p>مشاريع إعلانية ومحتوى تجاري مفتوحة للتقديم.</p></div>
-    <a class="btn primary" href="auth.html#signup">+ انشر Casting Call</a>
-  </div>
-  <div id="castingList" class="casting-list premium-casting-list"></div>
-</div>
-</section>
-
-<section class="section for-companies" id="companies">
-<div class="container company-showcase">
-  <div class="company-photo">
-    <img src="https://images.pexels.com/photos/30697993/pexels-photo-30697993.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="استوديو تصوير وإنتاج" loading="lazy">
-    <div class="photo-label"><span>● LIVE</span> Casting Session</div>
-  </div>
-  <div class="company-copy">
-    <span class="eyebrow">للشركات والمخرجين</span>
-    <h2>اختيار الكاست<br>مو لازم يبقى فوضى.</h2>
-    <p>سوّي بحث دقيق، احفظ المرشحين، شارك Shortlist ويا العميل، وتابع كل مشروع من Dashboard واحدة.</p>
-    <div class="company-features">
-      <div><span>01</span><b>Advanced Search</b><small>العمر، المدينة، الفئة، المهارات والخبرة.</small></div>
-      <div><span>02</span><b>Client Shortlists</b><small>شارك قائمة مختصرة برابط واضح وسريع.</small></div>
-      <div><span>03</span><b>Casting Management</b><small>المتقدمون والمشاريع والحالات بمكان واحد.</small></div>
-    </div>
-    <a href="auth.html#signup" class="btn primary lg">ابدأ كشركة</a>
-  </div>
-</div>
-</section>
-
-<section class="section experience-section">
-<div class="container">
-  <div class="premium-section-head centered"><div><span class="eyebrow">لكل طرف تجربة خاصة</span><h2>نفس المنصة. Dashboard تناسب شغلك.</h2></div></div>
-  <div class="experience-grid">
-    <a href="auth.html#signup" class="experience-card talent-exp">
-      <span class="exp-icon">🎭</span><div><small>TALENT</small><h3>مودل / ممثل</h3><p>بروفايل، Showreel، فرص، طلبات وإحصائيات.</p></div><b>←</b>
-    </a>
-    <a href="auth.html#signup" class="experience-card company-exp">
-      <span class="exp-icon">🎬</span><div><small>COMPANY</small><h3>شركة / مخرج</h3><p>بحث، مشاريع، متقدمون، Shortlists وحجوزات.</p></div><b>←</b>
-    </a>
-  </div>
-</div>
-</section>
-
-<section class="section plans-premium" id="plans">
-<div class="container">
-  <div class="premium-section-head centered"><div><span class="eyebrow">باقات بسيطة</span><h2>ابدأ مجاناً. ادفع لما تحتاج أكثر.</h2></div></div>
-  <div class="pricing premium-pricing">
-    <div class="price-card"><small>للمواهب</small><h3>Free</h3><div class="price">0 <small>د.ع</small></div><p>بروفايل أساسي<br>تقديم على الفرص<br>ظهور في البحث</p><a class="btn secondary full" href="auth.html#signup">ابدأ مجاناً</a></div>
-    <div class="price-card featured"><span class="badge">POPULAR</span><small>للمواهب</small><h3>Premium</h3><div class="price">10,000 <small>د.ع / شهر</small></div><p>ظهور أعلى<br>Showreel وإحصائيات<br>Boost للبروفايل</p><a class="btn primary full" href="auth.html#signup">اختار Premium</a></div>
-    <div class="price-card"><small>للشركات</small><h3>Company Pro</h3><div class="price">50,000 <small>د.ع / شهر</small></div><p>بحث متقدم<br>Casting Calls<br>Shortlists ومشاريع</p><a class="btn secondary full" href="auth.html#signup">ابدأ كشركة</a></div>
-  </div>
-</div>
-</section>
-
-<section class="final-cta">
-<div class="container">
-  <div><span class="eyebrow">CAST IRAQ</span><h2>خلي الفرصة تلقاك.</h2><p>أنشئ حسابك ورتب حضورك المهني من اليوم.</p></div>
-  <a class="btn primary xl" href="auth.html#signup">إنشاء حساب مجاني</a>
-</div>
-</section>
-</main>
-
-<footer class="premium-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a><p>المنصة العراقية للكاستنغ والإنتاج.</p></div><div><b>المنصة</b><a href="#talents">المواهب</a><a href="#casting">الكاستنغ</a><a href="#plans">الباقات</a></div><div><b>الحساب</b><a href="auth.html#login">تسجيل الدخول</a><a href="auth.html#signup">إنشاء حساب</a><a href="dashboard.html">Dashboard</a></div></div><div class="container copyright">© 2026 Cast Iraq</div></footer>
-<script src="app.js"></script>
-</body></html>
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0d10"><title>Cast Iraq — منصة الكاستنغ العراقية</title><meta name="description" content="منصة Cast Iraq للكاستنغ والمواهب وشركات الإنتاج"><link rel="manifest" href="manifest.webmanifest"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/styles.css"></head><body data-page="home"><header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a>
+<nav class="main-nav"><a href="feed.html">تصفح</a><a href="explore.html">المواهب</a><a href="castings.html">فرص الكاستنغ</a><a href="index.html#companies">للشركات</a><a href="index.html#pricing">الأسعار</a></nav>
+<div class="nav-actions" id="navActions"><a class="btn ghost sm" href="auth.html#login">دخول</a><a class="btn primary sm" href="auth.html#signup">إنشاء حساب</a></div>
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="القائمة">☰</button>
+</div><div class="mobile-menu" id="mobileMenu"><a href="feed.html">تصفح</a><a href="explore.html">المواهب</a><a href="castings.html">الكاستنغ</a><a href="dashboard.html">الداشبورد</a><a href="auth.html#login">تسجيل الدخول</a></div></header><main>
+<section class="hero"><div class="hero-bg"></div><div class="container hero-grid">
+<div class="hero-copy"><div class="eyebrow-pill"><span></span> منصة Casting عراقية</div><h1>اختار الوجه الصح.<br><em>وخلي الكاستنغ أسرع.</em></h1><p>قاعدة مواهب مرتبة، Casting Calls، Self‑Tapes، Shortlists، وجدولة Auditions — كله بمكان واحد للمودلز والممثلين وشركات الإنتاج.</p><div class="hero-actions"><a class="btn primary xl" href="auth.html#signup">ابدأ مجاناً</a><a class="btn secondary xl" href="explore.html">استكشف المواهب</a></div><div class="hero-stats"><div><b id="homeTalentCount">1,200+</b><span>موهبة</span></div><i></i><div><b id="homeCastingCount">180+</b><span>Casting Call</span></div><i></i><div><b>24/7</b><span>وصول للمنصة</span></div></div></div>
+<div class="hero-stage"><div class="hero-photo"><img src="https://images.pexels.com/photos/31686699/pexels-photo-31686699.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Talent portrait"><div class="hero-profile-chip"><div class="avatar-mini">س</div><div><b>سارة أحمد</b><span>مودل · بغداد</span></div><span class="verify-badge">✓ موثق</span></div></div><div class="float-card f1">🎬 <span><b>Self‑Tape Request</b><small>موعد التسليم: باچر 8:00 م</small></span></div><div class="float-card f2">★ <span><b>Shortlisted</b><small>إعلان سيارات</small></span></div></div>
+</div></section>
+<section class="partner-strip"><div class="container"><span>مصمم لـ</span><b>PRODUCTION HOUSES</b><b>AGENCIES</b><b>DIRECTORS</b><b>PHOTOGRAPHERS</b><b>BRANDS</b></div></section>
+<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">المواهب</span><h2>اكتشف وجوه جديدة</h2><p>فلترة حسب المدينة، العمر، الفئة، المهارات والتوثيق.</p></div><a class="link-pill" href="explore.html">عرض الكل ←</a></div><div class="talent-grid" id="homeTalentGrid"></div></div></section>
+<section class="section dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">Casting Calls</span><h2>فرص مفتوحة حالياً</h2><p>إعلانات، محتوى تجاري، UGC، Voice وأعمال تمثيل.</p></div><a class="btn primary" href="castings.html">كل الفرص</a></div><div class="casting-list" id="homeCastingList"></div></div></section>
+<section class="section" id="companies"><div class="container company-grid"><div class="company-visual"><img src="https://images.pexels.com/photos/30697993/pexels-photo-30697993.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Production studio"><div class="live-tag">● LIVE · Casting Session</div></div><div class="company-copy"><span class="eyebrow">للشركات والمخرجين</span><h2>من Breakdown إلى Booking<br>بدون فوضى واتساب.</h2><p>أنشئ مشروع وأدوار، راجع المتقدمين، اطلب Self‑Tape، غيّر الحالة، سوّي Shortlist وشارك Presentation مع العميل، وجدول Audition/Callback.</p><div class="feature-stack"><div><span>01</span><div><b>Advanced Search</b><small>فلترة دقيقة للمواهب وإضافتهم للمشروع مباشرة.</small></div></div><div><span>02</span><div><b>Application Pipeline</b><small>To Review → Selected → Self‑Tape → Hold → Booked.</small></div></div><div><span>03</span><div><b>Client Presentation</b><small>رابط مشاركة مرتب مع ملاحظات واختيارات العميل.</small></div></div></div><a class="btn primary lg" href="auth.html#signup">ابدأ كشركة</a></div></div></section>
+<section class="section soft-section"><div class="container"><div class="section-head centered"><div><span class="eyebrow">Workflow احترافي</span><h2>الأدوات المهمة فعلاً للكاستنغ</h2></div></div><div class="workflow-grid"><div class="workflow-card"><span>🔎</span><b>Talent Search</b><p>بحث متقدم، Skills، Playing Age، مدينة، لغة وتوفر.</p></div><div class="workflow-card"><span>🎞</span><b>Self‑Tape</b><p>طلب فيديو مع تعليمات وDeadline واستلامه داخل المشروع.</p></div><div class="workflow-card"><span>★</span><b>Shortlists</b><p>قوائم حسب المشروع مع مشاركة للعميل وملاحظات.</p></div><div class="workflow-card"><span>🗓</span><b>Audition Schedule</b><p>مواعيد Audition وCallback وحالة قبول الموهبة.</p></div><div class="workflow-card"><span>💬</span><b>Messaging</b><p>مراسلات مرتبطة بالمشروع بدل تشتت المحادثات.</p></div><div class="workflow-card"><span>✓</span><b>Verification</b><p>توثيق المواهب والشركات مع نظام بلاغات وإشراف.</p></div></div></div></section>
+<section class="section" id="pricing"><div class="container"><div class="section-head centered"><div><span class="eyebrow">الباقات</span><h2>ابدأ مجاني، وطور حسابك حسب حاجتك</h2></div></div><div class="pricing-grid"><div class="price-card"><small>TALENT</small><h3>Free</h3><div class="price">0 <span>د.ع</span></div><ul><li>بروفايل أساسي</li><li>صور ومهارات</li><li>تقديم محدود</li><li>رسائل الفرص</li></ul><a class="btn secondary full" href="auth.html#signup">إنشاء حساب</a></div><div class="price-card featured"><span class="popular">POPULAR</span><small>TALENT</small><h3>Premium</h3><div class="price">10,000 <span>د.ع/شهر</span></div><ul><li>Showreel وMedia أكثر</li><li>إحصائيات البروفايل</li><li>Role Tracker</li><li>Boost بالبحث</li></ul><a class="btn primary full" href="auth.html#signup">ابدأ Premium</a></div><div class="price-card"><small>COMPANY</small><h3>Pro</h3><div class="price">50,000 <span>د.ع/شهر</span></div><ul><li>بحث متقدم</li><li>مشاريع وCasting Calls</li><li>Shortlists وSelf‑Tapes</li><li>جدولة ومراسلات</li></ul><a class="btn secondary full" href="auth.html#signup">ابدأ كشركة</a></div></div></div></section>
+<section class="final-cta"><div class="container"><div><span class="eyebrow">CAST IRAQ</span><h2>خلي كل شغلك بالكاستنغ بمكان واحد.</h2><p>نسخة تجريبية جاهزة للاختبار للمواهب وشركات الإنتاج.</p></div><a class="btn primary xl" href="auth.html#signup">إنشاء حساب مجاني</a></div></section>
+</main><footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a><p>منصة عراقية للكاستنغ تربط المواهب بشركات الإنتاج والمخرجين.</p></div><div><b>المنصة</b><a href="feed.html">تصفح المحتوى</a><a href="explore.html">المواهب</a><a href="castings.html">Casting Calls</a><a href="dashboard.html">Dashboard</a></div><div><b>الحساب</b><a href="auth.html#signup">إنشاء حساب</a><a href="settings.html">الإعدادات</a><a href="privacy.html">الخصوصية</a></div><div><b>قانوني</b><a href="terms.html">شروط الاستخدام</a><a href="privacy.html">سياسة الخصوصية</a><a href="mailto:support@example.com">الدعم</a></div></div><div class="container copyright">© 2026 Cast Iraq — نسخة تجريبية</div></footer><div class="toast" id="toast"></div><script src="assets/db.js"></script><script src="assets/app.js"></script></body></html>
