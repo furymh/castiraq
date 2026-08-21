@@ -1,4 +1,4 @@
-const CACHE='castiraq-v7-2-20260821';
+const CACHE='castiraq-v7-2-1-20260821';
 const CORE=['./','index.html','styles.v7.css','db.v7.js','app.v7.js','image-placeholder.svg'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).catch(()=>{}))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});

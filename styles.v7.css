@@ -36,3 +36,62 @@
 /* Mobile app experience */
 @media(max-width:920px){body:not(.v6-reels-body){padding-bottom:76px}.container{width:100%;padding-inline:16px}.site-header{display:none}.mobile-app-bar{height:56px;padding:0 16px;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:90}.app-wordmark{font-weight:800;font-size:17px}.app-icon{font-size:21px}.app-bottom-nav,.mobile-social-nav{position:fixed;z-index:100;bottom:0;left:0;right:0;height:68px;background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(18px);display:grid!important;grid-template-columns:repeat(5,1fr);padding-bottom:env(safe-area-inset-bottom)}.app-bottom-nav a,.app-bottom-nav button,.mobile-social-nav a,.mobile-social-nav button{border:0;background:transparent;color:#86868b;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:19px;min-width:0}.app-bottom-nav span,.mobile-social-nav span{font-size:9px}.app-bottom-nav .active,.mobile-social-nav .active{color:#1d1d1f;font-weight:700}.app-bottom-nav .create,.mobile-social-nav button{width:46px;height:46px;min-height:46px;background:var(--blue);color:#fff;border-radius:50%;align-self:center;justify-self:center}.section{padding:38px 0}.page-hero.compact{padding:24px 0 20px}.page-hero h1{font-size:28px}.page-hero p{font-size:12px}.hero{padding:30px 0}.hero-grid{display:block}.hero h1{font-size:42px;letter-spacing:-1.4px}.hero-copy>p{font-size:15px}.hero-stage{margin-top:24px}.hero-photo{height:430px;border-radius:22px}.float-card{display:none}.hero-stats{justify-content:space-between;gap:8px}.hero-stats i{display:none}.partner-strip,.site-footer{display:none}.section-head{align-items:flex-end}.section-head h2{font-size:28px}.talent-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.talent-photo{height:auto;aspect-ratio:4/5}.talent-body{padding:11px}.talent-top b{font-size:13px}.tags{display:none}.card-actions .btn{font-size:10px;padding-inline:10px}.casting-item{grid-template-columns:1fr auto!important;gap:8px 10px;padding:14px}.casting-item>div:nth-child(2),.casting-item>div:nth-child(3){grid-column:1/-1}.casting-item .btn{grid-column:2;grid-row:1}.casting-item .v6-match{grid-column:1;grid-row:1;justify-self:start!important}.company-grid,.workflow-grid,.pricing-grid,.grid-2,.mini-grid,.company-trust-grid{grid-template-columns:1fr}.company-visual{height:380px}.final-cta .container{display:grid}.filter-panel,.casting-filters{grid-template-columns:1fr!important;margin:0 0 12px;padding:8px;border-radius:16px}.v6-discovery-chips{overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;scrollbar-width:none}.v6-discovery-chips button{white-space:nowrap}.results-bar{padding-inline:2px}.auth-shell{display:block;min-height:calc(100svh - 56px)}.auth-aside{display:none}.auth-main{padding:24px 14px}.auth-card{padding:20px;border-radius:20px}.auth-heading h2{font-size:26px}.demo-logins{grid-template-columns:1fr 1fr 1fr}.account-choice{grid-template-columns:1fr}.two-col,.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.social-main{padding:8px 0 20px}.social-shell{width:100%;display:block}.social-center{width:100%}.social-heading{padding-inline:14px}.social-heading h1{font-size:27px}.talent-strip{padding-inline:14px}.feed-toolbar{display:block;padding-inline:12px}.feed-tabs{margin-bottom:8px;overflow-x:auto}.feed-search{min-height:44px}.social-post,.feed-card{border-radius:0;border-inline:0}.feed-list{gap:8px}.social-side{display:none}.post-media{max-height:none}.post-media img,.post-media video{max-height:none}.profile-cover{padding:18px 0}.profile-header{grid-template-columns:86px 1fr;gap:14px}.profile-headshot{width:86px;height:86px}.profile-title h1{font-size:22px}.profile-header-actions{grid-column:1/-1}.ig-profile-stats{gap:16px}.profile-layout{display:block}.profile-side{margin-top:14px}.profile-side .panel{position:static}.v6-profile-highlights{margin-inline:-16px;border-inline:0;border-radius:0}.portfolio-grid,.ig-grid{grid-template-columns:repeat(3,1fr)}.media-grid{grid-template-columns:repeat(2,1fr)}.v6-ready-list{grid-template-columns:1fr}.dashboard-body{display:block;padding-bottom:76px}.sidebar{display:none}.dashboard-main{padding:14px 14px 90px}.dashboard-top{position:sticky;top:0;z-index:40;background:rgba(245,245,247,.96);backdrop-filter:blur(16px);margin:0 -14px 8px;padding:10px 14px}.dashboard-top h1{font-size:24px}.dash-top-actions .btn{display:none}.dashboard-mobile-tabs{display:flex;gap:6px;overflow-x:auto;white-space:nowrap;margin:0 -14px 14px;padding:7px 14px;background:#f5f5f7;scrollbar-width:none}.dashboard-mobile-tabs button{border:1px solid var(--line);background:#fff;color:#515154;border-radius:999px;padding:8px 12px;white-space:nowrap;font-size:11px}.dashboard-mobile-tabs button.active{background:#edf6ff;color:var(--blue);border-color:#b8d7f6}.metrics,.dashboard-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.metric{padding:14px}.metric b{font-size:22px}.panel{padding:16px}.table-wrap{border-radius:14px}.admin-grid{grid-template-columns:1fr}.v6-kanban{grid-auto-flow:column;grid-auto-columns:minmax(240px,80vw);grid-template-columns:none}.banner-admin-row{grid-template-columns:70px 1fr}.admin-media-preview{width:70px;height:50px}.settings-layout{padding-inline:0}.setting-row{align-items:flex-start}.modal{padding:12px;align-items:end}.modal-card{border-radius:22px 22px 0 0;max-height:88vh;margin-bottom:-12px}.presentation-toolbar{display:grid}}
 @media(max-width:480px){.container{padding-inline:12px}.hero h1{font-size:38px}.hero-photo{height:390px}.talent-grid{gap:7px}.talent-body{padding:9px}.meta{font-size:10px}.btn{font-size:12px}.metrics{grid-template-columns:1fr 1fr}.metric span{font-size:10px}.metric b{font-size:20px}.demo-logins button{font-size:11px;padding:6px}.auth-card{padding:16px}.feed-toolbar{padding-inline:9px}.social-heading{padding-inline:12px}}
+
+
+/* ===== V7.2.1 Company mobile responsive hardening ===== */
+@media (max-width:920px){
+  body.role-company .dashboard-main{padding-inline:12px}
+  body.role-company .dashboard-top{margin-inline:-12px;padding-inline:12px}
+  body.role-company .dashboard-mobile-tabs{margin-inline:-12px;padding-inline:12px}
+  body.role-company .dashboard-mobile-tabs button{min-height:40px;padding:9px 13px;font-size:11px}
+  body.role-company .panel{padding:14px;border-radius:16px;overflow:hidden}
+  body.role-company .panel-head{align-items:flex-start;gap:10px;flex-wrap:wrap}
+  body.role-company .panel-head>.btn{width:auto;max-width:100%}
+  body.role-company .metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  body.role-company .metric{min-width:0;padding:13px}
+  body.role-company .metric span,body.role-company .metric small{white-space:normal;overflow-wrap:anywhere}
+  body.role-company .metric b{font-size:21px;line-height:1.15}
+  body.role-company .mini-grid{grid-template-columns:1fr!important;gap:9px}
+  body.role-company .mini-card{min-width:0;padding:14px}
+  body.role-company .mini-card p,body.role-company .quick-item small{overflow-wrap:anywhere;word-break:break-word}
+  body.role-company .mini-card .btn{margin-top:4px}
+  body.role-company .quick-item{align-items:flex-start;gap:10px;flex-wrap:wrap}
+  body.role-company .quick-item>div{min-width:0;flex:1 1 180px}
+  body.role-company .quick-item>.btn{flex:0 0 auto}
+  body.role-company .filter-panel{display:grid!important;grid-template-columns:1fr!important;gap:7px!important;padding:8px!important}
+  body.role-company .filter-panel>*{min-width:0;width:100%}
+  body.role-company .pipeline-tabs{margin-inline:-2px;padding:2px;gap:6px;scroll-snap-type:x proximity}
+  body.role-company .pipeline-tabs button{min-height:38px;padding:8px 11px;scroll-snap-align:start;flex:0 0 auto}
+  body.role-company .table-wrap{overflow:visible;border:0;background:transparent}
+  body.role-company .table-wrap table{min-width:0;width:100%;display:block}
+  body.role-company .table-wrap thead{display:none}
+  body.role-company .table-wrap tbody{display:grid;gap:9px;width:100%}
+  body.role-company .table-wrap tr{display:grid;grid-template-columns:1fr auto;gap:7px 10px;width:100%;padding:13px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.025)}
+  body.role-company .table-wrap td{display:block;min-width:0;padding:0;border:0;font-size:11px;overflow-wrap:anywhere}
+  body.role-company .table-wrap td:nth-child(1){grid-column:1;font-weight:800;font-size:12px}
+  body.role-company .table-wrap td:nth-child(2){grid-column:1/-1;color:#515154}
+  body.role-company .table-wrap td:nth-child(3){grid-column:1;align-self:center}
+  body.role-company .table-wrap td:nth-child(4){grid-column:2;grid-row:1;justify-self:end;align-self:start}
+  body.role-company .table-wrap td:nth-child(n+5){grid-column:1/-1}
+  body.role-company .table-wrap td .btn{min-height:36px;padding:7px 11px}
+  body.role-company .v6-kanban{grid-auto-columns:minmax(230px,84vw);gap:8px;margin-inline:-2px;padding-bottom:5px}
+  body.role-company .v6-kanban-col{padding:9px}
+  body.role-company .v6-kanban-card{min-width:0}
+  body.role-company .facts{gap:7px}
+  body.role-company .fact{align-items:flex-start}
+  body.role-company .fact b{text-align:left;overflow-wrap:anywhere}
+  body.role-company .form-actions,body.role-company .stack-actions{display:grid;grid-template-columns:1fr;gap:8px}
+  body.role-company .form-actions .btn,body.role-company .stack-actions .btn{width:100%}
+  body.role-company .modal-card{width:100%;padding:18px 14px calc(18px + env(safe-area-inset-bottom))}
+  body.role-company .modal-card h3{padding-left:38px}
+}
+@media (max-width:430px){
+  body.role-company .dashboard-main{padding-inline:10px}
+  body.role-company .dashboard-top{margin-inline:-10px;padding-inline:10px}
+  body.role-company .dashboard-mobile-tabs{margin-inline:-10px;padding-inline:10px}
+  body.role-company .metrics{grid-template-columns:1fr 1fr}
+  body.role-company .metric{padding:12px 10px}
+  body.role-company .metric b{font-size:19px}
+  body.role-company .panel{padding:12px}
+  body.role-company .table-wrap tr{padding:12px}
+}

@@ -1,0 +1,21 @@
+{
+  "issues": [],
+  "checks": {
+    "company role class": true,
+    "company mobile cards": true,
+    "company mobile filters": true,
+    "company mobile modal": true,
+    "company mobile quick actions": true,
+    "version 7.2.1": true
+  },
+  "company_sections": [
+    "overview",
+    "projects",
+    "submissions",
+    "search",
+    "shortlists",
+    "selftapes",
+    "schedule",
+    "messages"
+  ]
+}
