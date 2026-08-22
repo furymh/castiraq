@@ -1,4 +1,4 @@
-/* Cast Iraq V13.3.1 — role-aware account access + header polish */
+/* Cast Iraq V13.3.2 — persistent global header on every working page */
 (function(){
  const DB=window.CastDB,$=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>[...r.querySelectorAll(q)];
  const esc=s=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -6,6 +6,21 @@
  const role=()=>DB.currentUser()?.role||'guest';
  const route={home:()=>role()==='guest'?'index.html':'dashboard.html',discover:(cat='all')=>'discover.html'+(cat&&cat!=='all'?('?category='+encodeURIComponent(cat)):''),talent:id=>'talent.html?id='+encodeURIComponent(id),photographer:id=>'photographer.html?id='+encodeURIComponent(id),company:id=>'company.html?id='+encodeURIComponent(id),casting:id=>'casting.html?id='+encodeURIComponent(id),project:(id,tab='overview')=>'project-workspace.html?project='+encodeURIComponent(id)+'&tab='+encodeURIComponent(tab)};
  const homeHref=route.home;
+ function ensureSiteHeader(){
+  if(document.body.dataset.page==='auth')return;
+  let h=document.querySelector('.site-header');
+  if(!h){
+   h=document.createElement('header');h.className='site-header v13-persistent-header';
+   h.innerHTML=`<div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a><nav class="main-nav" aria-label="التنقل الرئيسي"><a href="feed.html" data-top-nav="home">الرئيسية</a><a href="discover.html" data-top-nav="discover">اكتشف</a><a href="castings.html" data-top-nav="castings">فرص الكاستنغ</a><a href="reels.html" data-top-nav="reels">Reels</a></nav><div class="nav-actions" id="navActions"></div></div>`;
+   document.body.prepend(h);
+  }else h.classList.add('v13-persistent-header');
+  const p=document.body.dataset.page||'';
+  const key=p==='feed'?'home':p.includes('discover')||p==='explore'?'discover':p==='castings'||p==='casting'?'castings':p==='reels'?'reels':'';
+  h.querySelectorAll('[data-top-nav],.main-nav a').forEach(a=>{const href=a.getAttribute('href')||'';const is=(key==='home'&&href.includes('feed.html'))||(key==='discover'&&(href.includes('discover.html')||href.includes('explore.html')))||(key==='castings'&&href.includes('castings.html'))||(key==='reels'&&href.includes('reels.html'));a.classList.toggle('active',!!is)});
+  if(!DB.currentUser()){
+   const z=h.querySelector('#navActions');if(z&&!z.children.length)z.innerHTML='<a class="btn secondary sm" href="auth.html#login">تسجيل الدخول</a>';
+  }
+ }
  const icon=(name)=>({home:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>',discover:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',create:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',inbox:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>',profile:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c.8-4 3.1-6 7-6s6.2 2 7 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',chevron:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',settings:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19 13.5v-3l-2-.7a7 7 0 0 0-.8-1.8l.9-1.9-2.2-2.1-1.9.9a7 7 0 0 0-1.8-.8L10.5 2h-3l-.7 2.1a7 7 0 0 0-1.8.8L3.1 4 1 6.1 1.9 8a7 7 0 0 0-.8 1.8L-1 10.5v3l2.1.7a7 7 0 0 0 .8 1.8L1 17.9 3.1 20l1.9-.9a7 7 0 0 0 1.8.8l.7 2.1h3l.7-2.1a7 7 0 0 0 1.8-.8l1.9.9 2.2-2.1-.9-1.9a7 7 0 0 0 .8-1.8z" fill="none" stroke="currentColor" stroke-width="1.3" transform="translate(3 0)"/></svg>'})[name]||'';
  function roleCreate(){return({photographer:[['New Project','dashboard.html#projects'],['Upload Work','feed.html']],director:[['New Project','dashboard.html#projects'],['New Board','project-workspace.html']],company:[['New Casting','dashboard.html#projects'],['New Project','dashboard.html#projects']],talent:[['Post Work','feed.html'],['Update availability','settings.html']],admin:[['Platform Control','dashboard.html#features']]})[role()]||[['Create account','auth.html#signup']]}
  function accountHeader(){
@@ -18,11 +33,12 @@
   const topNav=$('#navActions');
   if(topNav){topNav.classList.add('v13-top-account-zone');topNav.innerHTML=`<a class="v13-top-icon" href="inbox.html" aria-label="الرسائل">${icon('inbox')}</a>${menu}`}
   const dash=$('.dash-top-actions');
-  if(dash){const notif=$('#notificationBtn');dash.querySelector('a[href="settings.html"]')?.remove();dash.insertAdjacentHTML('beforeend',menu);if(notif){notif.classList.add('v13-top-icon');notif.innerHTML=`<span class="v13-bell">◌</span><span id="notifCount">${esc($('#notifCount')?.textContent||'')}</span>`}}
+  if(dash&&!document.querySelector('.v13-persistent-header')){const notif=$('#notificationBtn');dash.querySelector('a[href="settings.html"]')?.remove();dash.insertAdjacentHTML('beforeend',menu);if(notif){notif.classList.add('v13-top-icon');notif.innerHTML=`<span class="v13-bell">◌</span><span id="notifCount">${esc($('#notifCount')?.textContent||'')}</span>`}}
   $$('.v13-account-wrap').forEach(w=>{const btn=w.querySelector('.v13-account-trigger'),m=w.querySelector('.v13-account-menu');const close=()=>{m.hidden=true;btn.setAttribute('aria-expanded','false');w.classList.remove('open')};btn.addEventListener('click',e=>{e.stopPropagation();const open=m.hidden;m.hidden=!open;btn.setAttribute('aria-expanded',String(open));w.classList.toggle('open',open)});w.querySelector('[data-v13-account-logout]')?.addEventListener('click',()=>{DB.logout();location.href='index.html'});document.addEventListener('click',e=>{if(!w.contains(e.target))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})});
  }
  function shell(){
   $$('.v13-global-nav,.v13-create-sheet').forEach(x=>x.remove());
+  if(document.body.classList.contains('pw-body'))return;
   const nav=document.createElement('nav');nav.className='v13-global-nav';nav.setAttribute('aria-label','التنقل الرئيسي');
   const items=[['home',homeHref(),'الرئيسية'],['discover','discover.html','اكتشف'],['create','#','إنشاء'],['inbox','inbox.html','الرسائل'],['profile',role()==='guest'?'auth.html':'settings.html','الحساب']];
   nav.innerHTML=items.map(([k,h,l])=>`<a href="${h}" data-v13-nav="${k}" aria-label="${l}"><span>${icon(k)}</span><small>${l}</small></a>`).join('');document.body.append(nav);
@@ -66,5 +82,5 @@
  function profileActions(){if(document.body.dataset.page!=='talent')return;setTimeout(()=>{const u=DB.currentUser(),host=$('#profileHeader'),side=$('#profileActions');if(!u||!host)return;const id=new URLSearchParams(location.search).get('id')||'t1';if(['photographer','company','director'].includes(u.role)){const acts=`<div class="v13-profile-actions"><button class="btn primary" data-v13-add-profile>Add to Project</button><button class="btn secondary" data-v13-message>Message</button><button class="v13-icon-action" data-v13-save-profile>${DB.isSaved?.('talent',id)?'★':'☆'}</button></div>`;host.querySelector('.profile-header-actions')?.replaceChildren();host.querySelector('.profile-header-actions')?.insertAdjacentHTML('beforeend',acts);if(side)side.hidden=true;$('[data-v13-save-profile]')?.addEventListener('click',()=>{DB.toggleSaved('talent',id);toast('تم الحفظ')});$('[data-v13-add-profile]')?.addEventListener('click',()=>{if(u.role==='photographer'){const p=(DB.state().photoProjects||[]).find(x=>x.photographerId===DB.currentPhotographer?.()?.id);if(p){DB.addTalentToPhotoProject(p.id,id);toast('تمت الإضافة إلى '+p.name)}else location.href='dashboard.html#projects'}else{DB.toggleSaved('talent',id);toast('تمت الإضافة للقائمة')}});$('[data-v13-message]')?.addEventListener('click',()=>location.href='inbox.html')}} ,80)}
 
  document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const thread=document.querySelector('.v13-thread-sheet');if(thread){e.preventDefault();thread._closeOverlay?.();return}const s=document.querySelector('.v13-create-sheet');if(s){e.preventDefault();s._closeOverlay?.();return}const m=document.querySelector('#appModal.show');if(m&&typeof window.closeModal==='function'){e.preventDefault();window.closeModal()}});
- document.addEventListener('DOMContentLoaded',()=>{DB.ensureV13?.();shell();accountHeader();discover();dashboard();inbox();authDirector();profileActions()});
+ document.addEventListener('DOMContentLoaded',()=>{DB.ensureV13?.();ensureSiteHeader();shell();accountHeader();discover();dashboard();inbox();authDirector();profileActions()});
 })();
