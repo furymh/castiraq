@@ -1,0 +1,34 @@
+{
+  "routes": 21,
+  "route_names": [
+    "404.html",
+    "auth.html",
+    "casting.html",
+    "castings.html",
+    "company.html",
+    "dashboard.html",
+    "explore.html",
+    "feed.html",
+    "index.html",
+    "moodboard.html",
+    "photographer-project.html",
+    "photographer-tasks.html",
+    "photographer.html",
+    "privacy.html",
+    "project-workspace.html",
+    "reels.html",
+    "settings.html",
+    "shortlist.html",
+    "storyboard.html",
+    "talent.html",
+    "terms.html"
+  ],
+  "missing": [],
+  "duplicate_ids": [],
+  "css_braces_ok": true,
+  "js_files": [
+    "db.v12.js",
+    "workspace.v12.js",
+    "app.v10.js"
+  ]
+}

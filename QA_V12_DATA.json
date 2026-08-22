@@ -1,0 +1,143 @@
+{
+  "pass": 17,
+  "total": 17,
+  "results": [
+    {
+      "name": "photographer login",
+      "pass": true,
+      "value": "photographer"
+    },
+    {
+      "name": "create project",
+      "pass": true,
+      "value": "pp-1787359297347"
+    },
+    {
+      "name": "add talents",
+      "pass": true,
+      "value": 2
+    },
+    {
+      "name": "scene inheritance",
+      "pass": true,
+      "value": {
+        "id": "sh-1787359297361",
+        "storyboardId": "sb-1787359297353",
+        "sceneId": "sc-1787359297353",
+        "shotNumber": 1,
+        "image": "talent1.jpg",
+        "shotSize": "MS",
+        "description": "Sara walks to camera",
+        "talentId": "",
+        "cameraAngle": "Eye Level",
+        "cameraMovement": "Static",
+        "duration": "",
+        "notes": "",
+        "status": "Draft",
+        "position": 1,
+        "talentIds": [],
+        "captureStatus": "not_shot",
+        "title": "",
+        "action": "",
+        "blocking": "",
+        "dialogue": "",
+        "audio": "",
+        "camera": "",
+        "lens": "",
+        "focalLength": "",
+        "fps": "",
+        "aperture": "",
+        "iso": "",
+        "nd": "",
+        "stabilization": "",
+        "annotationImage": "",
+        "planningStatus": "ready",
+        "effectiveLocationId": "location-1787359297354-2wqld",
+        "effectiveLookId": "look-1787359297356-4v20x",
+        "effectiveLightingSetupId": "lighting-1787359297357-4d6rs",
+        "effectiveCameraSetupId": "camera-1787359297358-l1spf",
+        "effectiveTalentIds": [
+          "t1"
+        ]
+      }
+    },
+    {
+      "name": "readiness ready",
+      "pass": true,
+      "value": {
+        "ready": true,
+        "missing": [],
+        "count": 0
+      }
+    },
+    {
+      "name": "shot override",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "create variations",
+      "pass": true,
+      "value": 4
+    },
+    {
+      "name": "story vs shooting order",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "capture statuses",
+      "pass": true,
+      "value": "skipped"
+    },
+    {
+      "name": "project readiness",
+      "pass": true,
+      "value": {
+        "total": 4,
+        "ready": 4,
+        "issues": [],
+        "percent": 100,
+        "captured": 0,
+        "retake": 0,
+        "skipped": 1,
+        "remaining": 4
+      }
+    },
+    {
+      "name": "stress 100 shots",
+      "pass": true,
+      "value": 104
+    },
+    {
+      "name": "50 tasks",
+      "pass": true,
+      "value": 50
+    },
+    {
+      "name": "regression company login",
+      "pass": true,
+      "value": "company"
+    },
+    {
+      "name": "regression talent login",
+      "pass": true,
+      "value": "talent"
+    },
+    {
+      "name": "unauthorized photographer project access denied",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "regression admin login",
+      "pass": true,
+      "value": "admin"
+    },
+    {
+      "name": "photographer relogin",
+      "pass": true,
+      "value": "photographer"
+    }
+  ]
+}
