@@ -1,0 +1,8 @@
+{
+  "login": true,
+  "shots": 100,
+  "boardItems": 50,
+  "tasks": 20,
+  "projectPersisted": true,
+  "pass": true
+}

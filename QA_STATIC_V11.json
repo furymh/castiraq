@@ -1,0 +1,12 @@
+{
+  "routes": 21,
+  "missing_local_dependencies": [],
+  "duplicate_id_pages": [],
+  "workspace_route": "project-workspace.html",
+  "legacy_workspace_redirects": [
+    "photographer-project.html",
+    "moodboard.html",
+    "storyboard.html",
+    "photographer-tasks.html"
+  ]
+}

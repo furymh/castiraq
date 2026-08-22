@@ -1,0 +1,22 @@
+{
+  "breakpoints_in_css": [
+    "1024",
+    "1500",
+    "380",
+    "640",
+    "860",
+    "900"
+  ],
+  "uses_horizontal_overflow_hide": false,
+  "uses_important_count": 0,
+  "workspace_tabs": [
+    "overview",
+    "board",
+    "shots",
+    "tasks",
+    "files"
+  ],
+  "shooting_mode": true,
+  "inspector": true,
+  "same_shot_entity_views": true
+}
