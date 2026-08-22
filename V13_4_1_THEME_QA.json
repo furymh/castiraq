@@ -1,0 +1,18 @@
+{
+  "html_routes": 23,
+  "full_pages": 19,
+  "redirect_only": [
+    "photographer-project.html",
+    "photographer-tasks.html",
+    "storyboard.html",
+    "moodboard.html"
+  ],
+  "missing_dependencies": [],
+  "duplicate_id_pages": [],
+  "theme_files": [
+    "styles.theme.css",
+    "theme.v13.js",
+    "set-wordmark-light.svg",
+    "set-wordmark-dark.svg"
+  ]
+}
