@@ -1,0 +1,24 @@
+{
+  "version": "13.4.0",
+  "brand": "SET",
+  "html_routes": 23,
+  "deploy_files": 62,
+  "set_brand_assets": [
+    "set-wordmark.svg",
+    "set-mark.svg",
+    "favicon.svg",
+    "set-icon-180.png",
+    "set-icon-192.png",
+    "set-icon-512.png"
+  ],
+  "old_brand_visible_html": [],
+  "js_syntax": "PASS",
+  "css_braces": "PASS",
+  "missing_dependencies": 0,
+  "broken_internal_links": 0,
+  "duplicate_ids": 0,
+  "notes": [
+    "Legacy internal filenames and demo email domains retained for compatibility.",
+    "Legacy blue declarations remain in historical CSS layers but SET brand layer loads last and overrides user-facing states."
+  ]
+}

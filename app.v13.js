@@ -1,4 +1,4 @@
-/* Cast Iraq V13.3.2 — persistent global header on every working page */
+/* SET V13.4 — persistent global product shell */
 (function(){
  const DB=window.CastDB,$=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>[...r.querySelectorAll(q)];
  const esc=s=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -11,7 +11,7 @@
   let h=document.querySelector('.site-header');
   if(!h){
    h=document.createElement('header');h.className='site-header v13-persistent-header';
-   h.innerHTML=`<div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Cast Iraq</span></a><nav class="main-nav" aria-label="التنقل الرئيسي"><a href="feed.html" data-top-nav="home">الرئيسية</a><a href="discover.html" data-top-nav="discover">اكتشف</a><a href="castings.html" data-top-nav="castings">فرص الكاستنغ</a><a href="reels.html" data-top-nav="reels">Reels</a></nav><div class="nav-actions" id="navActions"></div></div>`;
+   h.innerHTML=`<div class="container nav-wrap"><a class="brand" href="index.html" aria-label="SET الرئيسية"><img class="set-wordmark" src="set-wordmark.svg" alt="SET"><img class="set-brand-mark compact-only" src="set-mark.svg" alt="SET"></a><nav class="main-nav" aria-label="التنقل الرئيسي"><a href="feed.html" data-top-nav="home">الرئيسية</a><a href="discover.html" data-top-nav="discover">اكتشف</a><a href="castings.html" data-top-nav="castings">فرص الكاستنغ</a><a href="reels.html" data-top-nav="reels">Reels</a></nav><div class="nav-actions" id="navActions"></div></div>`;
    document.body.prepend(h);
   }else h.classList.add('v13-persistent-header');
   const p=document.body.dataset.page||'';
